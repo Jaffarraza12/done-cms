@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: arabic_regular;
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
+@font-face {
+    font-family: arabic_bold;
+    src: url(../fonts/DroidKufi-Bold.ttf);
+}
+
+body{
+    font-family:arabic_regular ;
+    font-size: 16px;
+}
+
+
+.panel {
+    border: 1px solid #d3d3d3;
+}
+
+.panel .panel-heading{
+    background: #468bbe;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.panel .panel-heading h1{
+    color: #fff;
+    font-size: 20px;
+    font-family: arabic_regular;
+}
+
+.heading-title {
+    color:#000;
+    font-family: arabic_regular;
+}
+
+
+.news li a {
+    font-size: 12px;
+}
+
+.panel-list-item a {
+    font-size: 12px;
+}
+
+
+table.contact{
+    border:1px solid #666;
+}
+
+table.contact td {
+    padding: 15px;
+    border:1px solid #666;
+}
