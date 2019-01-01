@@ -56,7 +56,7 @@
     <div class="container-fluid">
     <!-- BEGIN LOGO -->
     <a class="brand" style="width:220px;">
-        RSH Awards
+        Appertunity
     </a>
     <!-- END LOGO -->
     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
