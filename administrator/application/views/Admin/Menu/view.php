@@ -52,7 +52,6 @@
 
         <div class="tabbable tabbable-custom">
     <?php $this->load->view("Admin/common/language_bar.php");?>
-    <h2>WEBHOOK WORK :)</h2>
     <div class="tab-content">
 
         <?php
