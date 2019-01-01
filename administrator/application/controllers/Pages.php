@@ -303,11 +303,15 @@ class Pages extends CI_Controller {
         //Loading Data for this view
         $this->load->model("MPages");
 
+
 		$pages = $this->MPages->viewPages($data['entity'])->result();
+
         //seperate data according to languages in different arrays
 
         $data['view'] = $this->MUtils->arrangeDataAccordingToLanguage($pages, $data);
 
+        /*print_r($pages);
+        exit();*/
         $data['main_content'] = "Admin/Pages/view.php";
 
         $this->load->view("Admin/default.php", $data);

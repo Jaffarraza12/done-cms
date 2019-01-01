@@ -25,18 +25,18 @@
                     <h4 class="white-color">Contact Us</h4>
                     <p class="white-color">
                         A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                        DUBAi<br>
+                        UAE <br>
+                        <strong>Phone:</strong>+97167379830<br>
+                        <strong>Email:</strong> info@operaartproduction.com<br>
                     </p>
 
                     <div class="social-links">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/operaartpro" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/operaartpro" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.instagram.com/operaartpro/" class="linkedin"><i class="fa fa-linkedin"></i></a>
                     </div>
 
                 </div>

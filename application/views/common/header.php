@@ -137,10 +137,10 @@
                         <div class="social-search-area f-right hidden-xs">
                             <div class="social-icon socile-icon-style-1 mr-10 f-left  hidden-sm">
                                 <ul>
-                                    <li><a href=" https://www.facebook.com/operaartpro" title="facebook"><i class="fa fa-facebook"></i></a> </li>
+                                    <li><a href="https://www.facebook.com/operaartpro" title="facebook"><i class="fa fa-facebook"></i></a> </li>
                                     <li><a href="https://twitter.com/operaartpro" title="twitter"><i class="fa fa-twitter"></i></a> </li>
                                     <li> <a href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" title="dribble"><i class="fa fa-youtube"></i></a></li>
-                                    <li> <a href="https://www.instagram.com/operaartpro/https://www.instagram.com/operaartpro/" title="Instagram"><i class="fa fa-instagram"></i></a> </li>
+                                    <li> <a href="https://www.instagram.com/operaartpro/" title="Instagram"><i class="fa fa-instagram"></i></a> </li>
 
                                 </ul>
                             </div>

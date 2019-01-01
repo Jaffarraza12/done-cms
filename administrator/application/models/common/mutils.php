@@ -25,6 +25,7 @@ class MUtils extends CI_Model
     //seperate data according to languages in different array...
     function arrangeDataAccordingToLanguage($arrData, $data)
     {
+
         $view = array();
         foreach ($arrData as $row)
         {
@@ -68,7 +69,7 @@ class MUtils extends CI_Model
     }
 	function StringPrepare($str)
 	{
-	  return mysqli_real_escape_string($str);
+	  return str_replace("'"," ",$str);
 	}
 
     //Upload file and return url

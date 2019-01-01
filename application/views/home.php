@@ -219,7 +219,7 @@
     </div>
 </div>
 
-<div class="brand-area ptb-80">
+<div class="brand-area ptb-10">
     <div class="container">
         <div class="row total-brand slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4080px; transform: translate3d(-1200px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
                                 <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand2.png" alt=""></a></div>
