@@ -154,6 +154,7 @@ class Menu extends CI_Controller {
                 $data['menu_new'][$lang->code][] = array(
                     'id' => $row->id,
                     'title' => $row->title,
+                    'group_id' => $row->group_id,
                     'link' => $row->link,
                     'language' => $row->code,
                 );
