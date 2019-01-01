@@ -43,6 +43,11 @@
         }
 
 
+        .white-color{
+            color:#fff !important;
+        }
+
+
 
         .backpack.dropzone {
             font-family: 'SF UI Display', 'Segoe UI';

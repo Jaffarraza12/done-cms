@@ -259,19 +259,3 @@
     </div>
 </div>
 
-<div class="cll-to-action-area  black-bg ptb-50">
-    <div class="container">
-        <div class="row action-box">
-            <div class="col-xl-8 col-lg-8 col-12 text-left">
-                <div class="section-title cta-title roboto">
-                    <h1>If you like <span>wright </span></h1>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-12 text-right action-box-button">
-                <a href="#" class="deff-btn uppercase">
-                    <span>Purchase Now</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
