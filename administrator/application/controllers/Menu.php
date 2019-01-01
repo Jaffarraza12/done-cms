@@ -180,11 +180,11 @@ class Menu extends CI_Controller {
         $arg = array();
         foreach($languages as $lang){
             $data['title'] = $this->input->post('title_' . $lang->code);
+            $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;
             if($this->input->post('link_' . $lang->code) != "custom"){
-                $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;
-                $data['link'] = $URL.$this->input->post('custom_' . $lang->code);
+                $data['link'] = $URL.'/'.$this->input->post('link_' . $lang->code);
             } else {
-                $data['link'] = $this->input->post('custom_' . $lang->code);
+                $data['link'] = $URL.'/'.$this->input->post('custom_' . $lang->code);
             }
             $data['code'] = $lang->code;
             $arg[] = array(
@@ -217,10 +217,10 @@ class Menu extends CI_Controller {
             $data['title'] = $this->input->post('title_' . $lang->code);
             $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;
             if($this->input->post('link_' . $lang->code) != "custom"){
-               echo  $data['link'] = $URL.$this->input->post('link_' . $lang->code);
-               exit();
+               $data['link'] = $URL.'/'.$this->input->post('link_' . $lang->code);
+
             } else {
-                $data['link'] = $URL.$this->input->post('custom_' . $lang->code);
+                $data['link'] = $URL.'/'.$this->input->post('custom_' . $lang->code);
             }
             $data['code'] = $lang->code;
             $status =  $this->MMenu->Edit($data,$id);

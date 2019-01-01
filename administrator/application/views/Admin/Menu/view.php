@@ -52,6 +52,7 @@
 
         <div class="tabbable tabbable-custom">
     <?php $this->load->view("Admin/common/language_bar.php");?>
+
     <div class="tab-content">
 
         <?php
@@ -88,7 +89,7 @@
                     echo  '<ol class="nested_with_switch_'.$langCode.' vertical loby">';
                     foreach($menu_new[$langCode] as $row) {
                         echo  '<li data-link="'.$row['link'].'"  data-name="'.$row['title'].'" data-id = "'.$row['id'].'" data-lang = "'.$langCode.'" >'.$row['id'].') '.$row['title'].' </li >
-				        <div class="pull-right loby-action"> <a href="Edit?id='.$row['id'].'" >EDIT</a>  |  <a href="Delete?id='.$row['id'].'">DELETE</a> </div>
+				        <div class="pull-right loby-action"> <a href="Edit?id='.$row['group_id'].'" >EDIT</a>  |  <a href="Delete?id='.$row['group_id'].'">DELETE</a> </div>
 				        <div class="clearfix"></div>';
                     }
                 echo '</ol>';
