@@ -64,6 +64,8 @@ class Menu extends CI_Controller {
     public function Edit()
     {
         //Load languages and Default Language
+        $this->load->model("MMenu");
+        $this->load->model("MSetting");
         $languages = $this->MUtils->getLanguages();
         $data['Languages'] = $languages;
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
@@ -79,13 +81,54 @@ class Menu extends CI_Controller {
 
 
         $id = (int)$this->input->get('id');
-        $this->load->model("MMedia");
-        $Media = $this->MMedia->loadMediaById($id)->result();
-        $data['view'] = $this->MUtils->arrangeDataAccordingToLanguage($Media, $data);
 
-        $data['wid'] = $id;
+        $row_menu = $this->MMenu->viewById($id)->result();
+        $data['view'] = $this->MUtils->arrangeDataAccordingToLanguage($row_menu, $data);
+        $data['menu_id'] = $id;
+        $data['menu'] = array();
+        $data['site_url'] =  $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;;
+        $data['activeMenu'] = "mnuNews";
+        $this->load->model('malbum');
+        $albums = $this->load->model('malbum');
+        $languages = $this->MUtils->getLanguages();
+        $pages = $this->MContent->viewByType('page')->result();
+        $news = $this->MContent->viewByType('news')->result();
+        $albums = $this->malbum->GetAll()->result();
+        $data['menu'] = array();
+        foreach ($languages as $lang){
+            //pages
+            foreach($pages as $page){
+                $data['menu'][$lang->code]['PAGES'][] = array(
+                    'cid' => $page->cid,
+                    'title' => $page->title,
+                    'link' => $page->tag,
+                    'slag' => 'page/'.$page->cid
+                );
+            }
+            //news
+            foreach($news as $page){
+                $data['menu'][$lang->code]['NEWS'][] = array(
+                    'cid' => $page->cid,
+                    'title' => $page->title,
+                    'link' => $page->tag,
+                    'slag' => 'get/'.$page->cid
 
-        $data['main_content'] = "Admin/Media/edit";
+                );
+            }
+
+            //news
+            foreach($albums as $album){
+                $data['menu'][$lang->code]['ALBUMS'][] = array(
+                    'cid' => $album->album_id,
+                    'title' => $album->name,
+                    'link' => '/gallery/'.$album->album_id,
+                );
+            }
+        }
+
+
+
+        $data['main_content'] = "Admin/Menu/edit";
         $this->load->view("Admin/default.php", $data);
     }
 
@@ -94,7 +137,6 @@ class Menu extends CI_Controller {
     {
         $this->load->model("MMenu");
         $this->load->model("MSetting");
-
         $data['Languages'] = $this->MUtils->getLanguages();
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
            //BreadCrumb URLs
@@ -108,19 +150,17 @@ class Menu extends CI_Controller {
         }
         $data['menu_new'] =array();
         foreach($data['Languages'] as $lang){
-            foreach($this->MMenu->viewByType('language',$lang->code)->result() as $row){
+            foreach($this->MMenu->viewByType('code',$lang->code)->result() as $row){
                 $data['menu_new'][$lang->code][] = array(
                     'id' => $row->id,
                     'title' => $row->title,
                     'link' => $row->link,
-                    'language' => $row->language,
+                    'language' => $row->code,
                 );
 
             }
 
         }
-
-
 
         $data['activeMenu'] = "mnuMedia";
 
@@ -128,25 +168,33 @@ class Menu extends CI_Controller {
         $this->load->view("Admin/default.php", $data);
     }
 
-
     // Add New logo in db
     public function AddMenu()
     {
         //Load languages and Default Language
         $this->load->model("MMenu");
+        $this->load->model("MSetting");
+
         $languages = $this->MUtils->getLanguages();
         $data = array();
+        $arg = array();
         foreach($languages as $lang){
             $data['title'] = $this->input->post('title_' . $lang->code);
             if($this->input->post('link_' . $lang->code) != "custom"){
-                $data['link'] = $this->input->post('custom_' . $lang->code);
+                $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;
+                $data['link'] = $URL.$this->input->post('custom_' . $lang->code);
             } else {
                 $data['link'] = $this->input->post('custom_' . $lang->code);
             }
-            $data['language'] = $lang->code;
-            $status =  $this->MMenu->Add($data);
-
+            $data['code'] = $lang->code;
+            $arg[] = array(
+                'title' =>$data['title'],
+                'link' => $data['link'],
+                'code' => $data['code']
+            );
         }
+        $status = $this->MMenu->add($arg);
+
         if ($status==1)
         {
             $data['status'] = "New Menu Added Successfully.";
@@ -156,58 +204,34 @@ class Menu extends CI_Controller {
     }
 
     // Add New logo in db
-    public function EditMedia()
+    public function EditMenu()
     {
         //Load languages and Default Language
+        $this->load->model("MMenu");
+        $this->load->model("MSetting");
+        $id = (int)$this->input->get('id');
+
         $languages = $this->MUtils->getLanguages();
-        $data['Languages'] = $languages;
-        $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
+        $data = array();
+        foreach($languages as $lang){
+            $data['title'] = $this->input->post('title_' . $lang->code);
+            $URL = $this->MSetting->GetByKey('site_url','site_url')->row()->value;
+            if($this->input->post('link_' . $lang->code) != "custom"){
+               echo  $data['link'] = $URL.$this->input->post('link_' . $lang->code);
+               exit();
+            } else {
+                $data['link'] = $URL.$this->input->post('custom_' . $lang->code);
+            }
+            $data['code'] = $lang->code;
+            $status =  $this->MMenu->Edit($data,$id);
 
-        $data['url'] = $this->input->post('txtUrl');
-        $data['homepage'] = 0;
-        $data['wid'] = $this->input->post('wid');
-        $data['category'] = $this->input->post('category');
-        $data['seo_url'] = $this->input->post('seo_url');
-
-        $data['smallImage'] = $this->MUtils->doUpload('smallFile', 344, 185, false);
-        $data['sliderImage'] = $this->MUtils->doUpload('sliderFile', 1920, 530, true);
-
-        if ($this->input->post('chkHomepage') == "yes")
-            $data['homepage'] = 1;
-
-        foreach ($languages as $lang)
-        {
-            $data['title_' . $lang->code] = $this->input->post('title_' . $lang->code);
-            $data['editor_' . $lang->code] = $this->input->post('editor_' . $lang->code);
-            $data['meta_title_' . $lang->code] = $this->input->post('meta_title_' . $lang->code);
-            $data['meta_keywords_' . $lang->code] = $this->input->post('meta_keywords_' . $lang->code);
-            $data['meta_desc_' . $lang->code] = $this->input->post('meta_desc_' . $lang->code);
-            $data['wd_id_' . $lang->code] = $this->input->post('wd_id_' . $lang->code);
-            $data['slider_text_' . $lang->code] = $this->input->post('slider_text_' . $lang->code);
-            $data['slider_anchor_' . $lang->code] = $this->input->post('slider_anchor_' . $lang->code);
-            $data['slider_url_' . $lang->code] = $this->input->post('slider_url_' . $lang->code);
         }
-
-        $status = 1;
-        $defaultCode = $languages[$data['defaultLang']]->code;
-        if ( isset($_POST['title_' . $defaultCode] ) )
+        if ($status==1)
         {
-            $this->load->model("MMedia");
-            $status = $this->MMedia->editMedia($data);
-        }
-
-        if ($status == 1)
-        {
-            $data['status'] = "Media Updated Successfully";
+            $data['status'] = "New Menu Added Successfully.";
             $data['statusCode'] = 1;
         }
-        else
-        {
-            $data['status'] = "Error occured while updating Media";
-            $data['statusCode'] = 0;
-        }
-
-        $this->view($data);
+        $this->view();
 
 
     }
@@ -216,15 +240,9 @@ class Menu extends CI_Controller {
     public function Delete()
     {
         $id = (int) $this->input->get('id');
-        $this->load->model("MMedia");
-        $status = $this->MMedia->deleteImage($id);
-
-        if ($status)
-            $this->MUtils->setSuccess("Record Deleted Successfully");
-        else
-            $this->MUtils->setError("Error occurred while deleting record");
-
-        echo $this->MUtils->getStatus();
+        $sql = " DELETE FROM `menu_item` WHERE group_id = '".$id."'  ";
+        $this->db->query($sql);
+        redirect($_SERVER['HTTP_REFERER']);
     }
 	
 

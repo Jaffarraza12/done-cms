@@ -10,6 +10,23 @@
         z-index: 2000;
     }
 
+
+    .loby li{
+     float: left;
+        width:50%;
+
+    }
+    .loby-action{
+        margin-top:13px;
+    }
+
+    .loby-action a{
+        color: #C00;
+        display: inline;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
     ol.example li.placeholder {
         position: relative;
         /** More li styles **/
@@ -69,10 +86,11 @@
 
             echo '</div>';
             echo  '<div class="span3"><h5>ITEMS WHICH NOT IN THE MENU LIST</h5>';
-
-                    echo  '<ol class="nested_with_switch_'.$langCode.' vertical">';
+                    echo  '<ol class="nested_with_switch_'.$langCode.' vertical loby">';
                     foreach($menu_new[$langCode] as $row) {
-                        echo  '<li data-link="'.$row['link'].'"  data-name="'.$row['title'].'" data-id = "'.$row['id'].'" data-lang = "'.$langCode.'" >'.$row['id'].') '.$row['title'].'</li >';
+                        echo  '<li data-link="'.$row['link'].'"  data-name="'.$row['title'].'" data-id = "'.$row['id'].'" data-lang = "'.$langCode.'" >'.$row['id'].') '.$row['title'].' </li >
+				        <div class="pull-right loby-action"> <a href="Edit?id='.$row['id'].'" >EDIT</a>  |  <a href="Delete?id='.$row['id'].'">DELETE</a> </div>
+				        <div class="clearfix"></div>';
                     }
                 echo '</ol>';
             echo '</div>';

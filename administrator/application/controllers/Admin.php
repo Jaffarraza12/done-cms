@@ -25,6 +25,7 @@ class Admin extends CI_Controller {
 
         $status = $this->MUsers->authenticate($data);
 
+
         if (is_object($status))
         {
             $user = $status->result();
