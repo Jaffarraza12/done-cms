@@ -49,7 +49,7 @@ class Menu extends CI_Controller {
                 $data['menu'][$lang->code]['ALBUMS'][] = array(
                     'cid' => $album->album_id,
                     'title' => $album->name,
-                    'link' => '/gallery/'.$album->album_id,
+                    'link' => 'gallery/'.$album->album_id,
                 );
             }
         }
@@ -121,7 +121,7 @@ class Menu extends CI_Controller {
                 $data['menu'][$lang->code]['ALBUMS'][] = array(
                     'cid' => $album->album_id,
                     'title' => $album->name,
-                    'link' => '/gallery/'.$album->album_id,
+                    'link' => 'gallery/'.$album->album_id,
                 );
             }
         }
