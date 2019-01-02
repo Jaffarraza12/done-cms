@@ -620,11 +620,11 @@ ul.social-icons li a {
     text-align: right;
 }
 
-label{font-family:arabic_regular,Hind,sans-serif; }
+label,li{font-family:arabic_regular,Hind,sans-serif; }
 p,a,h1,h2,h3,h4{font-family:arabic_regular,Hind,sans-serif;
     text-align: right;}
 
-footer li {
+footer li,li {
     text-align: right;
 }
 
