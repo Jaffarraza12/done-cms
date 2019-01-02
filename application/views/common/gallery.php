@@ -13,6 +13,9 @@
         min-height: 600px;
         direction: rtl;
     }
+    a{
+        margin: 20px 0px;
+    }
 
     @media(min-width: 30em) {
         #masonry {
@@ -153,22 +156,21 @@
         <div clas="row">
             <h2 style="text-align: center;"><?php echo $album->heading ?></h2>
         </div>
-
-        <div class="col-md-3">
-            <ul>
-            <?php foreach($albums as $album) {?>
-                <li><a href="<?php echo base_url().'gallery/'.$album->album_id ?>" style="font-weight: 700;font-size: 18px;"><?php echo $album->heading ?></a> </li>
-            <?php } ?>
-            </ul>
-        </div>
-        <div class="col-md-9" style="min-height: 600px;">
+        <div class="col-md-9 col-xs-12 " style="min-height: 600px;">
           <?php foreach($galleries as $img) {?>
             <div class="col-md-4 col-xs-6">
                 <a rel="example_group"  href="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>"">
-                <img src="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>" alt="" />
+                <img src="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>" alt="" style="margin:20px;" />
                 </a>
             </div>
           <?php } ?>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <?php foreach($albums as $album) {?>
+                    <li><a href="<?php echo base_url().'gallery/'.$album->album_id ?>" style="font-weight: 700;font-size: 18px;"><?php echo $album->heading ?></a> </li>
+                <?php } ?>
+            </ul>
         </div>
     </div>
 <div class="clearfix"></div>

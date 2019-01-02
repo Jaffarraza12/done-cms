@@ -1,6 +1,6 @@
 <?php if ($page_content->show_slider) {   $config->render(['common/slideshow']); } ?>
 
-<?php  $config->render([$page])?>
+<?php   $config->render([$page])?>
 
 
 
@@ -43,7 +43,7 @@
         </div>
     </div>
 </div>
-<?php if (strtolower($type) == "home"  ) { ?>
+<?php if ($page_content->cid == 44 ) { ?>
 <div class="crazy-team-area ptb-80">
     <div class="container">
         <div class="section-title roboto">
