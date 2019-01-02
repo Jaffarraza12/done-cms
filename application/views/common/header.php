@@ -20,11 +20,12 @@
     <!-- This core.css file contents all plugings css file. -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/plugins.css">
     <!-- Theme shortcodes/elements style -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/shortcode.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/nivo-slider.css" type="text/css" media="screen" />
     <!-- Theme main style -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
     <!-- Responsive css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/shortcode.css">
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
     <link rel="stylesheet" type="text/plain" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
@@ -161,12 +162,9 @@
             <div class="container">
                 <div class="full-width-mega-dropdown">
                     <div class="row align-items-center">
-                        <div class="col-lg-2 col-md-3 col">
-                            <div class="logo ptb-20"><a href="<?php echo base_url();?>"> <img src="<?php echo base_url(); ?>assets/img/opera.png" alt="main logo"></a></div>
-                        </div>
                         <div class="col-lg-10 col-md-9 col">
                             <nav id="primary-menu">
-                            <?php
+                                <?php
                                 $langCode = 'AR';
                                 echo '<ul class="main-menu menu-eff text-left">';
                                 foreach ($menu[$langCode][0][0] as $row) {
@@ -185,6 +183,10 @@
 
                             </nav>
                         </div>
+                        <div class="col-lg-2 col-md-3 col">
+                            <div class="logo ptb-20"><a href="<?php echo base_url();?>"> <img src="<?php echo base_url(); ?>assets/img/opera.png" alt="main logo"></a></div>
+                        </div>
+
                     </div>
                 </div>
             </div>

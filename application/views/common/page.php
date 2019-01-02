@@ -5,7 +5,7 @@
 
 
                 <?php if (strtolower($type) == "news" || strtolower($type) == "activities" || strtolower($type) == "books" || strtolower($type) == "page") { ?>
-                <h2 class="heading-title"><?php echo $page_content->title ?></h2>
+
                 <?php } ?>
 
                 <?php if ($page_content->image && $page_content->show_image) {

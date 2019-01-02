@@ -12,31 +12,33 @@
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">99</span></h3>
-                    <p>projects completed</p>
+                    <p>عملائنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">120</span></h3>
-                    <p>Happy Clients</p>
+                    <p>اعمالنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">75</span></h3>
-                    <p>Cups of Coffe</p>
+                    <p>خدماتنا  </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">105</span></h3>
-                    <p>Awards Winner</p>
+                    <p>تسجيلاتنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">3500</span></h3>
-                    <p>Ratings</p>
+                    <p>الفيديو والصور
+
+                    </p>
                 </div>
             </div>
         </div>

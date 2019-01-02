@@ -22,21 +22,24 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 footer-contact">
-                    <h4 class="white-color">Contact Us</h4>
+                    <h4 class="white-color">تواصل معنا</h4>
                     <p class="white-color">
-                        A108 Adam Street <br>
-                        DUBAi<br>
-                        UAE <br>
-                        <strong>Phone:</strong>+97167379830<br>
+                        العنوان - الجرف – فلامنجو مول – مكتب رقم 113
+
+
+
+                        <br>
+                        عجمان<br>
+
+                        <strong>هاتف :</strong> 97167379830 <br>
                         <strong>Email:</strong> info@operaartproduction.com<br>
                     </p>
 
                     <div class="social-links">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/operaartpro"" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/operaartpro" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/operaartpro" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/operaartpro/" class="instagram"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a href="https://www.instagram.com/operaartpro/" class="linkedin"><i class="fa fa-linkedin"></i></a>
                     </div>
 
                 </div>

@@ -1,70 +1,19 @@
-/*-----------------------------------------------------------------------------------
-
-Template: wright - Multipurpose Bootstrap 4 Template
-  
- Description: wright is a multipurpose HTML5 template which comes with lot of features.
- 
- 
-Version: 4.0
-
------------------------------------------------------------------------------------
-
-CSS INDEX
-===================
-1. Theme Default CSS (css/shortcode/default.css)
-2. Header CSS (css/shortcode/header.css)
-3. Slider CSS (css/shortcode/slider.css)
-4. Footer CSS (css/shortcode/footer.css)
-5. promo style
-6. Home-01
-    6.1 featured area
-    6.2 what we offer
-    6.3 amazing work
-    6.4 service area 
-    6.5 counter-area
-    6.6 team area
-    6.7 out-skill area
-    6.8 brand area
-    6.9 call to action
-7. Home-02(567)
-    7.1 Feature-02
-    7.2 Blog and Recent work
-    7.3 Best Theme area 
-    7.4 recent projects
-    7.5 total amazing team
-    7.6 what client say & increadible skill
-8. home-3 (porftfolio filter)
-9. Home 4 (resturant)
-10. Home 5 
-11. Home 6 
-12. Shop page
-13. pagination
-14. shop list style
-15. Price Slider
-16. breadcrumb
-17. blog page
-18. single-blog
-19. about us page
-20. service page
-21. 404 page
-22. Faq page
-23. Contact page
-24. portfolio Page
-25. single porftfolio
-26. cart page
-27. Wishlist page
-28. login Page
-29. Single Produc
-30. checkout page
-31. Shortcode css
-32. Scroll UP
------------------------------------------------------------------------------------*/
-/* Google Fonts */
 @import 'https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|PT+Sans:400,400i,700|Raleway:400,600,700|Roboto+Slab:300,400,700';
-
+@font-face {
+    font-family: arabic_regular;
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
+@font-face {
+    font-family: arabic_bold;
+    src: url(../fonts/DroidKufi-Bold.ttf);
+}
 /*----------------------------------------*/
 /*  5. promo style
 /*----------------------------------------*/
+body{
+    font-family: arabic_regular,Hind,sans-serif;
+
+}
 .container {
     width: 1200px
 }
@@ -553,15 +502,24 @@ CSS INDEX
     font-size: 40px;
     line-height: 30px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .single-count p {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1.5px;
     line-height: 16px;
     margin: 0;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
+.social-links a{
+    float: right;
+    text-align: right;
+    padding: 5px 15px;
+}
+
 
 /*----------------------------------------*/
 /*  6.6 team area
@@ -641,6 +599,11 @@ ul.social-icons li a {
 .progress {
     height: 5px;
     margin-bottom: 25px;
+
+}
+
+.progress-bar a{
+    font-family:arabic_regular,Hind,sans-serif;
 }
 
 .single-prograss:last-child .progress {
@@ -653,6 +616,15 @@ ul.social-icons li a {
     line-height: 12px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family:arabic_regular,Hind,sans-serif;
+    text-align: right;
+}
+
+p,a,h1,h2,h3,h4{font-family:arabic_regular,Hind,sans-serif;
+    text-align: right;}
+
+footer li {
+    text-align: right;
 }
 
 .pr-blue {

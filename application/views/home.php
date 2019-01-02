@@ -3,43 +3,47 @@
 <?php  $config->render([$page])?>
 
 
+
+
 <div class="counter-area text-center ptb-60">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">99</span></h3>
-                    <p>projects completed</p>
+                    <p>عملائنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">120</span></h3>
-                    <p>Happy Clients</p>
+                    <p>اعمالنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">75</span></h3>
-                    <p>Cups of Coffe</p>
+                    <p>خدماتنا  </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">105</span></h3>
-                    <p>Awards Winner</p>
+                    <p>تسجيلاتنا </p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
                 <div class="single-count">
                     <h3><span class="counter2">3500</span></h3>
-                    <p>Ratings</p>
+                    <p>الفيديو والصور
+
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<?php if (strtolower($type) == "home"  ) { ?>
 <div class="crazy-team-area ptb-80">
     <div class="container">
         <div class="section-title roboto">
@@ -164,13 +168,14 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="skill-about">
                     <div class="section-title roboto">
-                        <h1>Why Choose <span>wright </span><br> HTML Template</h1>
+                        <h1>لماذ اوبرا للانتاج الفني</h1>
                     </div>
                     <div class="skill-content">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat.<span> sed diam voluptua
-                                        ater vero. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                        nonumys eirmod tempor empor invidunt ut labore et dolore.</span></p>
+                        <p>تعتبر شركة اوبرا للانتاج الفني من الشركات الرائدة في عالم الانتاج وهي علامة فنية ببصمة إمارتية لذلك نبتكر عالمًا  جديدًا في عالم الإنتاج الفني، نطلق فيه إبداعنا الشبابي ؛ لنقدم منتجات فنية و إعلامية متنوعة و مبتكرة ، شركة محترفة بكادر يعمل بأحدث الأجهزة و المعدات المتكاملة كما يميزنا بأن أعمالنا تنتج داخليًا و هذا الامر الذي يضمن لعملائنا نتائج فريدة و ذات جوده عالية
+
+
+
+                            </span></p>
                     </div>
                     <a class="single-btn" href="#">Read More<i class="zmdi zmdi-long-arrow-right"></i></a>
                 </div>
@@ -179,37 +184,37 @@
                 <div class="powerfull-skills">
                     <div class="single-prograss">
                         <div class="progess-heading">
-                            Strategy <span>79%</span>
+                            توفر تغطيات إعلامية احترافية
                         </div>
                         <div class="progress">
-                            <div class="progress-bar pr-blue wow fadeInLeft" style="width: 79%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
+                            <div class="progress-bar pr-blue wow fadeInLeft" style="width: 100%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
                             </div>
                         </div>
                     </div>
                     <div class="single-prograss">
                         <div class="progess-heading">
-                            Marketing <span>96%</span>
+                            إنتاج البرامج التلفزيونية و الإذاعية
                         </div>
                         <div class="progress">
-                            <div class="progress-bar pr-green wow fadeInLeft" style="width: 96%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
+                            <div class="progress-bar pr-green wow fadeInLeft" style="width: 100%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
                             </div>
                         </div>
                     </div>
                     <div class="single-prograss">
                         <div class="progess-heading pr-voilate">
-                            Wordpress Theme <span>65%</span>
+                            استيديوهات صوتية احترافية
                         </div>
                         <div class="progress">
-                            <div class="progress-bar pr-violate wow fadeInLeft" style="width: 65%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
+                            <div class="progress-bar pr-violate wow fadeInLeft" style="width: 100%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
                             </div>
                         </div>
                     </div>
                     <div class="single-prograss">
                         <div class="progess-heading">
-                            UI/UX Design <span>92%</span>
+                            توفر تغطيات إعلامية احترافية
                         </div>
                         <div class="progress">
-                            <div class="progress-bar pr-ornage wow fadeInLeft" style="width: 92%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
+                            <div class="progress-bar pr-ornage wow fadeInLeft" style="width: 100%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
                             </div>
                         </div>
                     </div>
@@ -258,4 +263,4 @@
                             </div></div></div></div></div></div>
     </div>
 </div>
-
+<?php } ?>
