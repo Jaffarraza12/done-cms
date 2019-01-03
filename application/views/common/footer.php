@@ -36,7 +36,7 @@
                     </p>
 
                     <div class="social-links">
-                        <a href="https://twitter.com/operaartpro"" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/operaartpro" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/operaartpro" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.instagram.com/operaartpro/" class="instagram"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" class="google-plus"><i class="fa fa-google-plus"></i></a>

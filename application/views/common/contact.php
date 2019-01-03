@@ -53,21 +53,16 @@
             </div>
         </div>
         <div class="col-md-4">
-            <p style="text-align:right">
+            <p>البريد الإلكتروني</p>
+            <p>info@operaartproduction.com</p>
+            <p> هاتف :   0097167379830       </p>
+            <p>  هاتف متحرك : استاذ أكرم الشريف 0509966390   </p>
+            <p> العنوان : عجمان- الجرف – فلامنجو مول – مكتب رقم 113    </p>
 
-                جمعية أم المؤمنين</p>
 
-            <p style="text-align:right"> <i class="fas fa-home"></i>             ص.ب: 170 عجمان</p>
 
-            <p style="text-align:right">     <i class="fas fa-location-arrow"></i>    دولة الإمارات العربية المتحدة</p>
 
-            <p style="text-align:right">00971
-                <i class="fas fa-phone"></i>                      - تحويلة: 20 </p>
 
-            <p style="text-align:right">00971
-                <i class="fas fa-fax"></i></p>
-
-            <p style="text-align:right">rshaward@http://operaartproduction.com<i class="far fa-envelope"></i></p>
         </div>
 
         <style>

@@ -211,8 +211,7 @@
                     </div>
                     <div class="single-prograss">
                         <div class="progess-heading">
-                            توفر تغطيات إعلامية احترافية
-                        </div>
+                            جميع الاعمال داخلية 100                         </div>
                         <div class="progress">
                             <div class="progress-bar pr-ornage wow fadeInLeft" style="width: 100%; visibility: hidden; animation-duration: 2s; animation-delay: 1s; animation-name: none;" data-wow-duration="2s" data-wow-delay="1s">
                             </div>
