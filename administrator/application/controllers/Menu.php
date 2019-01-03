@@ -148,6 +148,8 @@ class Menu extends CI_Controller {
         foreach($data['Languages'] as $lang){
             $data['menu'][$lang->code][] = json_decode($this->MSetting->GetByKey('menu',$lang->code)->row()->value);
         }
+
+
         $data['menu_new'] =array();
         foreach($data['Languages'] as $lang){
             foreach($this->MMenu->viewByType('code',$lang->code)->result() as $row){
@@ -168,6 +170,7 @@ class Menu extends CI_Controller {
         $data['main_content'] = "Admin/Menu/view";
         $this->load->view("Admin/default.php", $data);
     }
+
 
     // Add New logo in db
     public function AddMenu()
