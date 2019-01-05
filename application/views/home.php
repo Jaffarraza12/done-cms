@@ -47,7 +47,7 @@
 <div class="crazy-team-area ptb-80">
     <div class="container">
         <div class="section-title roboto">
-            <h1>Our Crazy <span>Team</span></h1>
+            <h1>فريق عملنا</h1>
         </div>
         <div class="our-team owl-carousel">
             <div >
@@ -177,7 +177,7 @@
 
                             </span></p>
                     </div>
-                    <a class="single-btn" href="#">Read More<i class="zmdi zmdi-long-arrow-right"></i></a>
+                    <a class="single-btn" href="aboutus">المزيد<i class="zmdi zmdi-long-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">

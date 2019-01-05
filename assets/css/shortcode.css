@@ -1946,7 +1946,8 @@ a.btn-def.btn2 {
 .single-btn {
     border-bottom: 1px solid #2395ec;
     color: #2395ec;
-    font-style: italic
+    font-style: italic;
+    margin-left: 85px;
 }
 
 .single-btn:hover {

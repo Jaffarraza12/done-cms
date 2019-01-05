@@ -123,18 +123,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <div class="phone-mail-area">
-                            <div class="contact-number text-white f-left">
-                                <i class="fa fa-phone"></i>
-                                +97167379830</div>
-                            <div class="contact-email text-white f-left hidden-xs">
-                                <i class="fa fa-envelope-o"></i>
-                                info@operaartproduction.com
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
                         <div class="social-search-area f-right hidden-xs">
                             <div class="social-icon socile-icon-style-1 mr-10 f-left  hidden-sm">
                                 <ul>
@@ -155,6 +143,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="phone-mail-area">
+                            <div class="contact-number text-white f-left">
+                                <i class="fa fa-phone"></i>
+                                +97167379830</div>
+                            <div class="contact-email text-white f-left hidden-xs">
+                                <i class="fa fa-envelope-o"></i>
+                                info@operaartproduction.com
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
