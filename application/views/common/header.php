@@ -147,7 +147,7 @@
                         <div class="phone-mail-area">
                             <div class="contact-number text-white f-left">
                                 <i class="fa fa-phone"></i>
-                                +97167379830</div>
+                               0097167379830</div>
                             <div class="contact-email text-white f-left hidden-xs">
                                 <i class="fa fa-envelope-o"></i>
                                 info@operaartproduction.com
