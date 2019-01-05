@@ -459,6 +459,7 @@ body{
 }
 .service-content{
     color:#fff;
+    text-align: right;
 }
 .service-content>span {
     color: rgba(255, 255, 255, 0.66);
