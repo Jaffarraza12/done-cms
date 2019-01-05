@@ -87,7 +87,7 @@
         loop: true,
         margin: 10,
         lazyLoad: true,
-        navText: ["<button><i class='fa fa-angle-left'></i></button>","<button><i class='fa fa-angle-right'></i></button>"],
+        navText: ["<button><i class='fa fa-angle-right'></i></button>","<button><i class='fa fa-angle-left'></i></button>"],
         responsiveClass:true,
         responsive:{
             0:{

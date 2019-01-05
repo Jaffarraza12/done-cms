@@ -39,9 +39,9 @@ li {
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
     font-size: 15px;
-    line-height: 25px
+    line-height: 25px;
+    direction: rtl;
 }
 
 .img,
