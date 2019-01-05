@@ -1,8 +1,5 @@
 <?php if ($page_content->show_slider) {   $config->render(['common/slideshow']); } ?>
-
-<?php   $config->render([$page])?>
-
-
+<?php $config->render([$page])?>
 
 
 <div class="counter-area text-center ptb-60">

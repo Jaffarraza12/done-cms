@@ -123,7 +123,8 @@ body{
 }
 
 .feature-icon a img {
-    margin-top: 39px;
+    border-radius: 60%;
+    margin-top: 18px;
 }
 
 .green .feature-icon a {

@@ -163,6 +163,10 @@
             <div class="container">
                 <div class="full-width-mega-dropdown">
                     <div class="row align-items-center">
+
+                        <div class="col-lg-2 col-md-3 col">
+                            <div class="logo ptb-20"><a href="<?php echo base_url();?>"> <img src="<?php echo base_url(); ?>assets/img/opera.png" alt="main logo"></a></div>
+                        </div>
                         <div class="col-lg-10 col-md-9 col">
                             <nav id="primary-menu">
                                 <?php
@@ -183,9 +187,6 @@
                                 ?>
 
                             </nav>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col">
-                            <div class="logo ptb-20"><a href="<?php echo base_url();?>"> <img src="<?php echo base_url(); ?>assets/img/opera.png" alt="main logo"></a></div>
                         </div>
 
                     </div>
