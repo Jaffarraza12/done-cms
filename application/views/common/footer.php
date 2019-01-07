@@ -55,11 +55,10 @@
 <script type="text/javascript">
     
     $(function () {
-        $('.awe-img').hover(function () {
+        $('.awe-img').mouseenter(function () {
             elem = $(this).find('.add-actions')
             elem.show()
             elem.animate({'opacity':'1','transition':'all .5s ease 0s;','bottom':'-10px'})
-        },function () {
         });
 
         $('.awe-img').mouseleave(function(){
