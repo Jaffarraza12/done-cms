@@ -146,7 +146,7 @@
 <?php // $config->render([$page])?>
 
 
-<div class="counter-area hidden text-center ptb-60">
+<div class="counter-area text-center ptb-60">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
@@ -184,7 +184,7 @@
         </div>
     </div>
 </div>
-<?php if ($page_content->cid != 44 ) { ?>
+<?php if ($page_content->cid == 44 ) { ?>
 <div class="crazy-team-area ptb-80">
     <div class="container">
         <div class="section-title roboto">
