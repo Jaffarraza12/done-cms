@@ -86,7 +86,7 @@
 
             echo '</div>';
             echo  '<div class="span3"><h5>ITEMS WHICH NOT IN THE MENU LIST</h5>';
-                    echo  '<ol class="nested_with_switch vertical loby">';
+                    echo  '<ol class="noti_110_'.$langCode.' vertical loby">';
                     foreach($menu_new[$langCode] as $row) {
                         echo  '<li data-link="'.$row['link'].'"  data-name="'.$row['title'].'" data-id = "'.$row['id'].'" data-lang = "'.$langCode.'" >'.$row['id'].') '.$row['title'].' </li >
 				        <div class="pull-right loby-action"> <a href="Edit?id='.$row['group_id'].'" >EDIT</a>  |  <a href="Delete?id='.$row['group_id'].'">DELETE</a> </div>
