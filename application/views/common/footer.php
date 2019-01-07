@@ -53,6 +53,29 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.nivo.slider.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/owl.carousel.js"></script>
 <script type="text/javascript">
+    
+    $(function () {
+        $('.awe-img').hover(function () {
+            elem = $(this).find('.add-actions')
+            elem.show()
+            elem.animate({'opacity':'1','transition':'all .5s ease 0s;','bottom':'-10px'})
+        },function () {
+        });
+
+        $('.awe-img').mouseleave(function(){
+            elem.css({'opacity':'0','bottom':'30px'})
+            elem = $(this).find('.add-actions')
+            setTimeout(function(){
+                elem.hide()
+
+            }, 3000);
+
+
+
+        })
+
+
+    });
     $(window).load(function() {
         $('#slider').nivoSlider({
             directionNav: true,

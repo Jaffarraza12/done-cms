@@ -1,8 +1,152 @@
 <?php if ($page_content->show_slider) {   $config->render(['common/slideshow']); } ?>
-<?php $config->render([$page])?>
+<style>
+    .awe-effect{
+        margin: 50px 0px;
+    }
+
+    .awe-effect-item{
+        margin: 20px 0px;
+        position: relative;
+        overflow: hidden;
+    }
+    .add-actions {
+        background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+        bottom: 30px;
+        height: 100%;
+        left: 0;
+        opacity:0;
+        display: none;
+        overflow: hidden;
+        padding: 10px 15px;
+        position: absolute;
+        transition: all 0.4s ease 0s;
+        width: 93%;
+        margin: 10px 15px;
+    }
+    .add-actions h4,.add-actions span{
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 40%;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .awe-img{
+        overflow: hidden;
+    }
 
 
-<div class="counter-area text-center ptb-60">
+
+
+</style>
+
+<div  class="row awe-effect">
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>
+            <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>
+            <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>
+            <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>
+            <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>
+            <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
+        <div class="awe-img">
+            <a>
+                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+            </a>        <div class="add-actions text-center">
+                <div class="project-dec">
+                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
+                        <h4>Nice project</h4>
+                        <span>Web design</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<?php // $config->render([$page])?>
+
+
+<div class="counter-area hidden text-center ptb-60">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
@@ -40,7 +184,7 @@
         </div>
     </div>
 </div>
-<?php if ($page_content->cid == 44 ) { ?>
+<?php if ($page_content->cid != 44 ) { ?>
 <div class="crazy-team-area ptb-80">
     <div class="container">
         <div class="section-title roboto">
