@@ -67,6 +67,11 @@
         });
 
 
+        setTimeout(function(){
+           $('.nivo-prevNav').click()
+        },5000)
+
+
 
     });
     $(window).load(function() {
@@ -110,7 +115,7 @@
         }
     });
 
-   
+
 
 </script>
 <!-- All js plugins included in this file. -->
