@@ -110,32 +110,7 @@
         }
     });
 
-    $('.our-team').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        nav: true,
-        rtl: true,
-        lazyLoad: true,
-        navText: ["<button><i class='fa fa-angle-right'></i></button>","<button><i class='fa fa-angle-left'></i></button>"],
-
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:3,
-                nav:false
-            },
-            1000:{
-                items:5,
-                nav:true,
-                loop:false
-            }
-        }
-    });
-
+   
 
 </script>
 <!-- All js plugins included in this file. -->
