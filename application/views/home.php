@@ -144,7 +144,7 @@
 <?php $config->render([$page])?>
 
 
-<div class="counter-area text-center ptb-60">
+<div class="counter-area text-center ptb-20">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">

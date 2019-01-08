@@ -67,7 +67,7 @@
         });
 
 
-        setTimeout(function(){
+        window.setInterval(function(){
            $('.nivo-prevNav').click()
         },5000)
 
