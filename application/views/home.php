@@ -143,7 +143,7 @@
 </div>
 
 <div class="clearfix"></div>
-<?php // $config->render([$page])?>
+<?php $config->render([$page])?>
 
 
 <div class="counter-area text-center ptb-60">
