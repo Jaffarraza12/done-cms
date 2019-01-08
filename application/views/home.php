@@ -28,7 +28,7 @@
         font-size: 24px;
         text-align: center;
         font-weight: bolder;
-        padding-top: 40%;
+        padding-top:33%;
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -43,7 +43,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>
             <div class="add-actions text-center">
                 <div class="project-dec">
@@ -59,7 +59,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>
             <div class="add-actions text-center">
                 <div class="project-dec">
@@ -75,7 +75,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>
             <div class="add-actions text-center">
                 <div class="project-dec">
@@ -91,7 +91,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>
             <div class="add-actions text-center">
                 <div class="project-dec">
@@ -107,7 +107,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>
             <div class="add-actions text-center">
                 <div class="project-dec">
@@ -123,7 +123,7 @@
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
             <a>
-                <img src="https://via.placeholder.com/500.png/c00/fff/" />
+                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
             </a>        <div class="add-actions text-center">
                 <div class="project-dec">
                     <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
