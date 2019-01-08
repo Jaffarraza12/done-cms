@@ -41,7 +41,7 @@
 
 
 </style>
-
+<?php if ($page_content->cid == 44 ) { ?>
 <div  class="row awe-effect">
     <div class="awe-effect-item col-lg-4 col-md-4 col-12">
         <div class="awe-img">
@@ -141,6 +141,7 @@
 
     </div>
 </div>
+<?php } ?>
 
 <div class="clearfix"></div>
 <?php $config->render([$page])?>
