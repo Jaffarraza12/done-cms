@@ -55,23 +55,17 @@
 <script type="text/javascript">
     
     $(function () {
-        $('.awe-img').mouseenter(function () {
+        $('.awe-img').hover(function () {
             elem = $(this).find('.add-actions')
             elem.show()
             elem.animate({'opacity':'1','transition':'all .5s ease 0s;','bottom':'-10px'})
-        });
-
-        $('.awe-img').mouseleave(function(){
+        },function () {
             elem.css({'opacity':'0','bottom':'30px'})
             elem = $(this).find('.add-actions')
-            setTimeout(function(){
                 elem.hide()
 
-            }, 3000);
+        });
 
-
-
-        })
 
 
     });
@@ -82,6 +76,8 @@
             slices: 18,
             pauseTime: 750000,
             pauseOnHover: false,
+            manualAdvance: false,
+            autoPlay : true,
             controlNav: false,
             prevText: '<i class="fa fa-angle-left nivo-prev-icon"></i>',
             nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
