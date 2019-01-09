@@ -23,7 +23,7 @@
         width: 93%;
         margin: 10px 15px;
     }
-    .add-actions h4,.add-actions span{
+    .add-actions h4,.add-actions span,.add-actions a{
         color: #FFF;
         font-size: 24px;
         text-align: center;
