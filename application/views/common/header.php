@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
-<!-- saved from url=(0057)http://demo.devitems.com/wright-preview/wright/index.html -->
-<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""
+><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Opera Art Production</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="http://demo.devitems.com/wright-preview/wright/images/icons/favicon.ico">
-    <link rel="shortcut icon" href="http://demo.devitems.com/wright-preview/wright/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo base_url(); ?>uploads/icon.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>uploads/icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- All css files are included here. -->

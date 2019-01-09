@@ -38,113 +38,13 @@
     }
 </style>
 
-<?php if ($page_content->cid == 44 ) { ?>
-<div  class="row awe-effect">
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>
-            <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>
-            <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>
-            <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>
-            <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>
-            <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="awe-effect-item col-lg-4 col-md-4 col-12">
-        <div class="awe-img">
-            <a>
-                <img src="https://via.placeholder.com/500x400.png/c00/fff/" />
-            </a>        <div class="add-actions text-center">
-                <div class="project-dec">
-                    <a class="venobox vbox-item" data-gall="myGallery" href="img/portfolio/2.jpg">
-                        <h4>Nice project</h4>
-                        <span>Web design</span>
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-</div>
-<?php } ?>
 
 <div class="clearfix"></div>
 <?php $config->render([$page])?>
 
 
-<div class="counter-area text-center ptb-20">
+<div class="counter-area text-center ptb-40">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
