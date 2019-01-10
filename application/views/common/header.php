@@ -130,6 +130,7 @@
   <a class="d-none d-sm-block" href="https://twitter.com/operaartpro" target="_blank"><img src="<?php echo base_url() ?>uploads/twitter.png"/></a>
   <a class="d-none d-sm-block" href="https://www.facebook.com/operaartpro" target="_blank"><img src="<?php echo base_url() ?>uploads/facebook.png"/></a>
   <a class="d-none d-sm-block" href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" target="_blank"><img src="<?php echo base_url() ?>uploads/youtube.png"/></a>
+  <a class="d-none d-sm-block" href="https://www.instagram.com/operaartpro/" target="_blank"><img src="<?php echo base_url() ?>uploads/instagram.png"/></a>
   <a class="d-none d-sm-block" href="https://api.whatsapp.com/send?phone=00917509966390" target="_blank"> <img src="<?php echo base_url() ?>uploads/whatsapp.png"/></a>
 </div>
 
