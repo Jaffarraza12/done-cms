@@ -95,7 +95,7 @@
         rtl: true,
         margin: 10,
         autoplay:true,
-        autoplayTimeout:5000,
+        autoplayTimeout:3000,
         autoplayHoverPause:true,
         lazyLoad: true,
         navText: ["<button ><i class='fa fa-angle-right'></i></button>","<button ><i class='fa fa-angle-left'></i></button>"],
