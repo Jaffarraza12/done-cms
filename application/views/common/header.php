@@ -41,6 +41,19 @@
         body{
             overflow-x: hidden;
         }
+        .social-cusitom-links {
+            position: fixed;
+            z-index: 1020;
+            left: 0px;
+            width: 75px;
+            padding-top: 10%;
+        }
+        .social-cusitom-links a {
+            padding: 0px 2px;
+            text-align: center;
+            display: block;
+            font-size: 26px;
+        }
 
 
         .white-color{
@@ -111,6 +124,14 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+
+
+<div class="social-cusitom-links">
+  <a class="d-none d-sm-block" href="https://twitter.com/operaartpro" target="_blank"><img src="<?php echo base_url() ?>uploads/twitter.png"/></a>
+  <a class="d-none d-sm-block" href="https://www.facebook.com/operaartpro" target="_blank"><img src="<?php echo base_url() ?>uploads/facebook.png"/></a>
+  <a class="d-none d-sm-block" href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" target="_blank"><img src="<?php echo base_url() ?>uploads/youtube.png"/></a>
+  <a class="d-none d-sm-block" href="https://api.whatsapp.com/send?phone=00917509966390" target="_blank"> <img src="<?php echo base_url() ?>uploads/whatsapp.png"/></a>
+</div>
 
 <!-- Body main wrapper start -->
 <div class="wrapper home-business">

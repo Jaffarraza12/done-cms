@@ -85,7 +85,7 @@
 <?php if ($page_content->cid == 44 ) { ?>
 
 
-<div class="skill-area pb-80">
+<div class="skill-area pt-25  pb-80">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
