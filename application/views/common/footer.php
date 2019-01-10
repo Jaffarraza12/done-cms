@@ -62,8 +62,7 @@
         },function () {
             elem.css({'opacity':'0','bottom':'30px'})
             elem = $(this).find('.add-actions')
-                elem.hide()
-
+            elem.hide()
         });
 
 
@@ -95,6 +94,9 @@
         loop: true,
         rtl: true,
         margin: 10,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         lazyLoad: true,
         navText: ["<button><i class='fa fa-angle-right'></i></button>","<button><i class='fa fa-angle-left'></i></button>"],
         responsiveClass:true,
