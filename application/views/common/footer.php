@@ -98,12 +98,12 @@
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         lazyLoad: true,
-        navText: ["<button><i class='fa fa-angle-right'></i></button>","<button><i class='fa fa-angle-left'></i></button>"],
+        navText: ["<button ><i class='fa fa-angle-right'></i></button>","<button ><i class='fa fa-angle-left'></i></button>"],
         responsiveClass:true,
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
@@ -111,8 +111,8 @@
             },
             1000:{
                 items:3,
-                nav:true,
-                loop:false
+                nav:false,
+                loop:true
             }
         }
     });

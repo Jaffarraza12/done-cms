@@ -44,7 +44,7 @@
 <?php $config->render([$page])?>
 
 
-<div class="counter-area text-center ptb-40">
+<div class="counter-area text-center ptb-10">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col">
@@ -146,43 +146,4 @@
     </div>
 </div>
 
-<div class="brand-area ptb-10">
-    <div class="container">
-        <div class="row total-brand slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4080px; transform: translate3d(-1200px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand2.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand3.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand4.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand5.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand6.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 240px;"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="0"><img src="./Home Business __ wright_files/brand1.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 240px;"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="0"><img src="./Home Business __ wright_files/brand2.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 240px;"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="0"><img src="./Home Business __ wright_files/brand3.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 240px;"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="0"><img src="./Home Business __ wright_files/brand4.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 240px;"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="0"><img src="./Home Business __ wright_files/brand5.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand6.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand1.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand2.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand3.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand4.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand5.png" alt=""></a></div>
-                            </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 240px;" tabindex="-1"><div><div class="col-12" style="width: 100%; display: inline-block;">
-                                <div class="single-brand"><a href="#" tabindex="-1"><img src="./Home Business __ wright_files/brand6.png" alt=""></a></div>
-                            </div></div></div></div></div></div>
-    </div>
-</div>
 <?php } ?>
