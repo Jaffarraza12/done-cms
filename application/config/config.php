@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url']	= ';
-$config['base_url']	= 'http://operaartproduction.com/demo/';
+$config['base_url']	= 'http://operaartproduction.com';
 
 /*
 |--------------------------------------------------------------------------
