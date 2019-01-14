@@ -3,7 +3,7 @@
 
     <h2>Contact Us Page</h2>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8" style="height: 500px;">
             <div class="well well-sm">
                 <form>
                     <div class="row">
