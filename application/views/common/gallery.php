@@ -161,7 +161,7 @@
             </ul>
         </div>
 
-        <div class="col-md-9 col-xs-12 " style="min-height: 600px;">
+        <div class="col-md-9 col-xs-12 " style="min-height: 300px;">
           <?php foreach($galleries as $img) {?>
             <div class="col-md-4 col-xs-6 ablum-event">
                 <a rel="example_group"  href="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>"">
