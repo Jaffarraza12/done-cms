@@ -87,34 +87,36 @@
             nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
         });
     });
-    elem = $('.what-new')
-    elem.owlCarousel({
-        dots:true,
-        nav: true,
-        loop: true,
-        rtl: true,
-        margin: 10,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        lazyLoad: true,
-        navText: ["<button ><i class='fa fa-angle-right'></i></button>","<button ><i class='fa fa-angle-left'></i></button>"],
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            600:{
-                items:3,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:false,
-                loop:true
+    $(document).ready(function(){
+        elem = $('.what-new')
+        elem.owlCarousel({
+            dots:true,
+            nav: true,
+            loop: true,
+            rtl: true,
+            margin: 10,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            lazyLoad: true,
+            navText: ["<button ><i class='fa fa-angle-right'></i></button>","<button ><i class='fa fa-angle-left'></i></button>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true
+                }
             }
-        }
+        });
     });
 
 
