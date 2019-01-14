@@ -8,10 +8,7 @@
         background: #fff;
     }
 
-    .gray-bg{
-        padding: 40px 0px;
-    }
-
+   
     .awe-effect-item{
         margin: 20px 0px;
         position: relative;

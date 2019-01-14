@@ -22,7 +22,7 @@
                         العنوان - الجرف – فلامنجو مول – مكتب رقم 113
                         <br>
                         عجمان<br>
-                        <strong>هاتف :</strong> 97167379830 <br>
+                       + <strong>هاتف :</strong> 97167379830 <br>
                         <strong>Email:</strong> info@operaartproduction.com<br>
                     </p>
                     <div class="social-links">
@@ -31,7 +31,7 @@
                         <a href="https://www.youtube.com/channel/UCgHddnKxhIVOWJwZ0OOgT0A?view_as=subscriber" title="dribble"><i class="fa fa-youtube"></i></a>
                         <a href="https://www.instagram.com/operaartpro/" title="Instagram"><i class="fa fa-instagram"></i></a>
                     </div>
-                </div>
+                </div>+
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
     $(function () {
         $('.awe-img').hover(function () {
             elem = $(this).find('.add-actions')
-            elem.show()
+            elem.show()+
             elem.animate({'opacity':'1','transition':'all .5s ease 0s;','bottom':'-10px'})
         },function () {
             elem.css({'opacity':'0','bottom':'30px'})
@@ -87,7 +87,7 @@
             nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
         });
     });
-    $(function(){
+
         elem = $('.what-new')
         elem.owlCarousel({
             dots:true,
@@ -117,7 +117,7 @@
                 }
             }
         });
-    });
+
 
 
 
