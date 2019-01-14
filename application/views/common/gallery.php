@@ -13,7 +13,7 @@
         min-height: 600px;
         direction: rtl;
     }
-    a{
+    .ablum-event a{
         margin: 20px 0px;
     }
 
@@ -158,7 +158,7 @@
         </div>
         <div class="col-md-9 col-xs-12 " style="min-height: 600px;">
           <?php foreach($galleries as $img) {?>
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-4 col-xs-6 ablum-event">
                 <a rel="example_group"  href="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>"">
                 <img src="<?php echo base_url() ?>/uploads/gallery/<?php echo $img->image?>" alt="" style="margin:20px;" />
                 </a>

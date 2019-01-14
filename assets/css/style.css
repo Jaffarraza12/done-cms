@@ -98,7 +98,7 @@ body{
 .boxed-layout .sticky {
     left: auto;
     margin: auto;
-    width: 1240px;
+    width: 100%;
 }
 
 /*=============06 home-01 start============*/
@@ -441,6 +441,13 @@ body{
     min-height: 150px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.black-bg {
+    background: #2a2d32 !important;
+    width:100%;
+    height: 46px;
+}
+
 
 .owl-nav{
     position: absolute;
