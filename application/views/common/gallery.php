@@ -153,6 +153,14 @@
         <div clas="row">
             <h2 style="text-align: center;"><?php echo $album->heading ?></h2>
         </div>
+        <div class="col-md-3">
+            <ul>
+                <?php foreach($albums as $album) {?>
+                    <li><a href="<?php echo base_url().'gallery/'.$album->album_id ?>" style="font-weight: 700;font-size: 18px;"><?php echo $album->heading ?></a> </li>
+                <?php } ?>
+            </ul>
+        </div>
+
         <div class="col-md-9 col-xs-12 " style="min-height: 600px;">
           <?php foreach($galleries as $img) {?>
             <div class="col-md-4 col-xs-6 ablum-event">
@@ -161,13 +169,6 @@
                 </a>
             </div>
           <?php } ?>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <?php foreach($albums as $album) {?>
-                    <li><a href="<?php echo base_url().'gallery/'.$album->album_id ?>" style="font-weight: 700;font-size: 18px;"><?php echo $album->heading ?></a> </li>
-                <?php } ?>
-            </ul>
         </div>
     </div>
 <div class="clearfix"></div>
