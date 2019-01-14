@@ -87,7 +87,7 @@
             nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
         });
     });
-    $(document).ready(function(){
+    $(function(){
         elem = $('.what-new')
         elem.owlCarousel({
             dots:true,
