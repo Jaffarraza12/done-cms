@@ -8,7 +8,7 @@
         background: #fff;
     }
 
-   
+
     .awe-effect-item{
         margin: 20px 0px;
         position: relative;
