@@ -152,6 +152,7 @@
     <div class="container">
         <div clas="row">
             <h2 style="text-align: center;"><?php echo $album->heading ?></h2>
+            <p style="text-align: center;"><?php echo $album->description ?></p>
         </div>
         <div class="col-md-3">
             <ul>
