@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+    <br/><br/>  
 </div>
 <?php if ($page_content->cid == 44 ) { ?>
 
