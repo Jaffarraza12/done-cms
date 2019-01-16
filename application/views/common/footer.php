@@ -49,12 +49,27 @@
 <!-- Bootstrap framework js -->
 <script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>assets/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="<?php echo base_url()?>assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <!-- Slider js
+
 <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>-->
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.nivo.slider.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/owl.carousel.js"></script>
 <script type="text/javascript">
-    
+    <script>
+    $(document).ready(function() {
+
+        $("a[rel=example_group]").fancybox({
+            'transitionIn': 'none',
+            'transitionOut': 'none',
+            'titlePosition': 'over',
+            'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+            }
+        });
+    });
+</script>
     $(function () {
         $('.awe-img').hover(function () {
             elem = $(this).find('.add-actions')
