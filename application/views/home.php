@@ -1,7 +1,7 @@
 <?php if ($page_content->show_slider) {   $config->render(['common/slideshow']); } ?>
 <style>
     .awe-effect{
-        margin: 50px 0px;
+        margin: 10px 0px;
     }
 
     .feature-area{
@@ -9,6 +9,7 @@
     }
 
 
+    .awe-effect-item{
     .awe-effect-item{
         margin: 20px 0px;
         position: relative;
