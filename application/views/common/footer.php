@@ -57,7 +57,7 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.nivo.slider.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/owl.carousel.js"></script>
 <script type="text/javascript">
-    <script>
+
     $(document).ready(function() {
 
         $("a[rel=example_group]").fancybox({
@@ -69,7 +69,7 @@
             }
         });
     });
-</script>
+
     $(function () {
         $('.awe-img').hover(function () {
             elem = $(this).find('.add-actions')
