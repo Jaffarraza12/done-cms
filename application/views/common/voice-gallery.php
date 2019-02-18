@@ -18,11 +18,11 @@
         <div class="col-md-12">
             <div class="col-md-4 col-lg-4 col-xs-12 ">
                 <div class="sound-item">
-                    <div class="sound-overlay">
-                        <div id="sound-download" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
-                        <div id="sound-listen" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
-                    </div>
                     <div class="sound-img">
+                        <div class="sound-overlay">
+                            <div id="sound-download" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
+                            <div id="sound-listen" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
+                        </div>
                         <img src="http://eeevents.ae/k2.png" />
                     </div>
 
@@ -44,7 +44,7 @@
         height: 25px;
         position: absolute;
         left:25%;
-        
+
     }
     .sound-overlay{
         background: #262626;
@@ -53,6 +53,9 @@
         height: 100%;
     }
 
+    .sound-img{
+        overflow: hidden;
+    }
     .sound-item{
         position: relative;
         overflow: hidden;
