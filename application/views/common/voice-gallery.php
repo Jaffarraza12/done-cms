@@ -20,8 +20,8 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay">
-                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-file-audio-o"></i> </div>
-                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-file-audio-o"></i> </div>
+                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-download"></i> </div>
                         </div>
                         <img src="http://eeevents.ae/k2.png" />
                     </div>
@@ -55,12 +55,17 @@
         bottom: 25px;
     }
 
+    .sound-overlay .sound-listen:hover,.sound-overlay .sound-download:hover{
+        transition: all 0.5s ease;
+        background:#fd7e14;
+    }
+
     .sound-overlay .fa {
-        font-size: 16px;
+        font-size:26px;
         text-align: center;
         margin: auto;
         display: block;
-        padding: 15px;
+        padding: 10px;
     }
     .sound-overlay{
         background: #262626;
