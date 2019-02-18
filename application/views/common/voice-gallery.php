@@ -20,14 +20,17 @@
            listen = overlay.find('#sound-listen')
            download = overlay.find('#sound-download')
             overlay.clearQueue()
-            overlay.animate({"width":"100%"})
-            listen.animate({'top':'100px'}, 500);
-            download.animate({'bottom':'160px'}, 500);
+            overlay.animate({"width":"100%"},function () {
+                listen.animate({'top':'100px','display':'block'}, 500);
+                download.animate({'bottom':'160px','display':'block'}, 500);
+            })
         },function(){
             overlay.clearQueue()
-            overlay.animate({"width":"80%"})
-            listen.animate({'top':'25px'}, 500);
-            download.animate({'bottom':'25px'}, 500);
+            overlay.animate({"width":"80%"},function () {
+                listen.animate({'top':'25px','display':'none'}, 500);
+                download.animate({'bottom':'25px','display':'none'}, 500);
+            })
+
         });
     });
 </script>
@@ -64,6 +67,7 @@
         position: absolute;
         left: 25%;
         top: 25px;
+        display:none
     }
     .sound-overlay .sound-download{
         background: #cfcfcf;
@@ -72,6 +76,7 @@
         position: absolute;
         right: 25%;
         bottom: 25px;
+        display:none;
     }
 
     .sound-overlay .sound-listen:hover,.sound-overlay .sound-download:hover{
@@ -87,7 +92,7 @@
         padding: 10px;
     }
     .sound-overlay{
-        background: #262626;
+        background: #000;
         opacity: 0.8;
         width: 80%;
         position: absolute;
