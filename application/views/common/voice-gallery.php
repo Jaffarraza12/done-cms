@@ -20,8 +20,8 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay">
-                            <div id="sound-download" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
-                            <div id="sound-listen" class="rounded-top sound-button"><i class="fa fa-facebook"></i> </div>
+                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-file-audio-o"></i> </div>
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-file-audio-o"></i> </div>
                         </div>
                         <img src="http://eeevents.ae/k2.png" />
                     </div>
@@ -38,19 +38,36 @@
 </div>
 
 <style>
-    .sound-overlay #sound-download{
+    .sound-overlay .sound-download{
         background: #cfcfcf;
-        width: 25px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
         position: absolute;
-        left:25%;
+        left: 25%;
+        top: 25px;
+    }
+    .sound-overlay .sound-listen{
+        background: #cfcfcf;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        right: 25%;
+        bottom: 25px;
+    }
 
+    .sound-overlay .fa {
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        display: block;
+        padding: 15px;
     }
     .sound-overlay{
         background: #262626;
         opacity: 0.8;
         width: 80%;
-        height: 100%;
+        position: absolute;
+        height: 86%;
     }
 
     .sound-img{
