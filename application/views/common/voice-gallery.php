@@ -11,6 +11,24 @@
             $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
             return false;
         });
+        
+        
+        $(".sound-img").hover(function () {
+
+           elem = $(this)
+           overlay = elem.find('.sound-overlay')
+           listen = overlay.find('#sound-listen')
+           download = overlay.find('#sound-download')
+            overlay.clearQueue()
+            overlay.animate({"width":"100%"})
+            listen.animate({'top':'100px'}, 500);
+            download.animate({'bottom':'160px'}, 500);
+        },function(){
+            overlay.clearQueue()
+            overlay.animate({"width":"80%"})
+            listen.animate({'top':'25px'}, 500);
+            download.animate({'bottom':'25px'}, 500);
+        });
     });
 </script>
 <div class="col-sm-12">
@@ -20,8 +38,9 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay">
-                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
                             <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-download"></i> </div>
+                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
+
                         </div>
                         <img src="http://eeevents.ae/k2.png" />
                     </div>
@@ -38,7 +57,7 @@
 </div>
 
 <style>
-    .sound-overlay .sound-download{
+    .sound-overlay .sound-listen{
         background: #cfcfcf;
         width: 45px;
         height: 45px;
@@ -46,7 +65,7 @@
         left: 25%;
         top: 25px;
     }
-    .sound-overlay .sound-listen{
+    .sound-overlay .sound-download{
         background: #cfcfcf;
         width: 45px;
         height: 45px;
