@@ -23,7 +23,7 @@
            overlay.show()
             listen.show();
             download.show();
-               overlay.animate({"width":"100%"},100)
+            overlay.animate({"width":"100%"},100)
             listen.animate({'top':'100px'}, 500);
             download.animate({'bottom':'160px'}, 500);
 
@@ -45,7 +45,7 @@
             <div class="col-md-4 col-lg-4 col-xs-12 ">
                 <div class="sound-item">
                     <div class="sound-img">
-                        <div class="sound-overlay">
+                        <div class="sound-overlay" style="display: none">
                             <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-download"></i> </div>
                             <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
 
