@@ -46,9 +46,12 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay" style="display: none">
-                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><a href="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-download"></i> </a> </div>
-                            <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
-
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button" data-sound="sound-key"><i class="fa fa-play"></i> </div>
+                            <div id="sound-download" class="rounded-top sound-download sound-button"><a href="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-download"></i></a>  </div>
+                            <audio id="sound-key" controls style="display: none">
+                                <source src="<?php echo base_url().'uploads/audio/wave.mp3'?>" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
                         </div>
                         <img src="http://eeevents.ae/k2.png" />
                     </div>
@@ -63,6 +66,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('.sound-listen').click(function(){
+            audio = $(this).data('sound')
+            audio = $('#'.audio)
+            audio.play()
+            $(this).html('<i class="fa fa-pause"></i>')
+        });
+    })
+</script>
 
 <style>
     .sound-overlay .sound-listen{
