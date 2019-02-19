@@ -46,7 +46,7 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay" style="display: none">
-                            <div id="sound-listen" class="rounded-top sound-listen sound-button-on" data-sound="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-play"></i> </div>
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button-on" data-sound="/uploads/audio/wave.mp3"><i class="fa fa-play"></i> </div>
                             <div id="sound-download" class="rounded-top sound-download "><a href="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-download"></i></a>  </div>
                         </div>
                         <img src="http://eeevents.ae/k2.png" />
@@ -66,6 +66,7 @@
 <script>
     $(document).ready(function () {
         $('.sound-listen-on').click(function(){
+            alert('clicked')
             voice = $(this).data('sound')
             var audio = new Audio(voice)
             audio.play()
