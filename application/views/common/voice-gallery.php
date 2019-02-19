@@ -79,7 +79,7 @@
             audio.pause()
             $(this).html('<i class="fa fa-play"></i>')
             %(this).addClass('sound-button-on').removeClass('sound-button-off')
-        }):
+        });
 
         })
 </script>
