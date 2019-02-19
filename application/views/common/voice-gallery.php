@@ -46,7 +46,7 @@
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay" style="display: none">
-                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><i class="fa fa-download"></i> </div>
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button"><a href="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-download"></i> </a> </div>
                             <div id="sound-download" class="rounded-top sound-download sound-button"><i class="fa fa-play"></i> </div>
 
                         </div>
