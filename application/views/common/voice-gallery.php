@@ -23,18 +23,17 @@
            overlay.show()
             listen.show();
             download.show();
-           overlay.animate({"width":"100%"},function () {
+               overlay.animate({"width":"100%"},100)
+            listen.animate({'top':'100px'}, 500);
+            download.animate({'bottom':'160px'}, 500);
 
-           listen.animate({'top':'100px'}, 500);
-           download.animate({'bottom':'160px'}, 500);
-            })
         },function(){
             overlay.clearQueue()
             overlay.hide()
             listen.hide();download.hide();
-            listen.animate({'top':'25px'}, 500);
+            listen.animate({'top':'25px'}, 10);
             overlay.animate({"width":"80%"},function () {
-            download.animate({'bottom':'25px'}, 500);
+            download.animate({'bottom':'25px'}, 10);
             })
 
         });
