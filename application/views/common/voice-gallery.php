@@ -68,16 +68,17 @@
         var audio
         $('.sound-button-on').on('click',function(){
             voice = $(this).data('sound')
-            audio = new Audio(voice)
-            audio.play()
-           $(this).html('<i class="fa fa-pause"></i>')
-            $(this).addClass('sound-button-off').removeClass('sound-button-on')
-        });
+            if($(this).hasClass('playing')){
+                audio.pause()
+                $(this).html('<i class="fa fa-pause"></i>')
+                $(this).removeClass('playing')
+            } else {
+                audio = new Audio(voice)
+                audio.play()
+                $(this).html('<i class="fa fa-pause"></i>')
+                $(this).addClass('playing')
+            }
 
-        $('.sound-button-off').on('click',function(){
-            audio.pause()
-            $(this).html('<i class="fa fa-play"></i>')
-            $(this).addClass('sound-button-on').removeClass('sound-button-off')
         });
 
 
