@@ -19,12 +19,13 @@
            overlay = elem.find('.sound-overlay')
            listen = overlay.find('#sound-listen')
            download = overlay.find('#sound-download')
-            overlay.clearQueue()
-            overlay.show()
-            overlay.animate({"width":"100%"},function () {
-                listen.show();download.show();
-                listen.animate({'top':'100px'}, 500);
-                download.animate({'bottom':'160px'}, 500);
+           overlay.clearQueue()
+           overlay.show()
+           overlay.animate({"width":"100%"},function () {
+           listen.show();
+           download.show();
+           listen.animate({'top':'100px'}, 500);
+           download.animate({'bottom':'160px'}, 500);
             })
         },function(){
             overlay.clearQueue()
