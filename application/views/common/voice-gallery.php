@@ -66,24 +66,23 @@
 <script>
     $(document).ready(function () {
         var audio
-        $('.sound-button-on').click(function(){
+        $('.sound-button-on').on('click',function(){
             voice = $(this).data('sound')
             audio = new Audio(voice)
             audio.play()
            $(this).html('<i class="fa fa-pause"></i>')
             $(this).addClass('sound-button-off').removeClass('sound-button-on')
+        });
 
-
-            $('.sound-button-off').click(function(){
-                audio.pause()
-                $(this).html('<i class="fa fa-play"></i>')
-                $(this).addClass('sound-button-on').removeClass('sound-button-off')
-            });
-
+        $('.sound-button-off').on('click',function(){
+            audio.pause()
+            $(this).html('<i class="fa fa-play"></i>')
+            $(this).addClass('sound-button-on').removeClass('sound-button-off')
         });
 
 
-        })
+
+    })
 </script>
 
 <style>
