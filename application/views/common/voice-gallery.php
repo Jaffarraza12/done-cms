@@ -76,7 +76,7 @@
         $('.sound-button-off').click(function(){
             voice = $(this).data('sound')
             var audio = new Audio(voice)
-            audio..paused
+            audio..pause()
             $(this).html('<i class="fa fa-play"></i>')
             %(this).addClass('sound-button-on').removeClass('sound-button-off')
         }):
