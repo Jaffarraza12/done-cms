@@ -65,7 +65,7 @@
 
 <script>
     $(document).ready(function () {
-        $('.sound-listen-on').click(function(){
+        $('.sound-button-on').click(function(){
             alert('clicked')
             return false;
             voice = $(this).data('sound')
