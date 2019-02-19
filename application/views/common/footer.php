@@ -59,15 +59,16 @@
 <script type="text/javascript">
 
     $(document).ready(function() {
-
-        $("a[rel=example_group]").fancybox({
-            'transitionIn': 'none',
-            'transitionOut': 'none',
-            'titlePosition': 'over',
-            'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
-                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-            }
-        });
+        if($("a[rel=example_group]").length) {
+            $("a[rel=example_group]").fancybox({
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'titlePosition': 'over',
+                'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        }
     });
 
     $(function () {
@@ -90,18 +91,20 @@
 
     });
     $(window).load(function() {
-        $('#slider').nivoSlider({
-            directionNav: true,
-            animSpeed: 500,
-            slices: 18,
-            pauseTime: 750000,
-            pauseOnHover: false,
-            manualAdvance: false,
-            autoPlay : true,
-            controlNav: false,
-            prevText: '<i class="fa fa-angle-left nivo-prev-icon"></i>',
-            nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
-        });
+        if($("#slider").lenght) {
+            $('#slider').nivoSlider({
+                directionNav: true,
+                animSpeed: 500,
+                slices: 18,
+                pauseTime: 750000,
+                pauseOnHover: false,
+                manualAdvance: false,
+                autoPlay: true,
+                controlNav: false,
+                prevText: '<i class="fa fa-angle-left nivo-prev-icon"></i>',
+                nextText: '<i class="fa fa-angle-right nivo-next-icon"></i>'
+            });
+        }
     });
 
         elem = $('.what-new')
