@@ -70,7 +70,7 @@
             voice = $(this).data('sound')
             if($(this).hasClass('playing')){
                 audio.pause()
-                $(this).html('<i class="fa fa-pause"></i>')
+                $(this).html('<i class="fa fa-play"></i>')
                 $(this).removeClass('playing')
             } else {
                 audio = new Audio(voice)
