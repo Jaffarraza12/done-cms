@@ -67,6 +67,7 @@
     $(document).ready(function () {
         $('.sound-listen-on').click(function(){
             alert('clicked')
+            return false;
             voice = $(this).data('sound')
             var audio = new Audio(voice)
             audio.play()
