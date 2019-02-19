@@ -70,8 +70,18 @@
             var audio = new Audio(voice)
             audio.play()
            $(this).html('<i class="fa fa-pause"></i>')
+            %(this).addClass('sound-button-off').removeClass('sound-button-on')
         });
-    })
+
+        $('.sound-button-off').click(function(){
+            voice = $(this).data('sound')
+            var audio = new Audio(voice)
+            audio..paused
+            $(this).html('<i class="fa fa-play"></i>')
+            %(this).addClass('sound-button-on').removeClass('sound-button-off')
+        }):
+
+        })
 </script>
 
 <style>
