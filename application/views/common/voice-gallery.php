@@ -30,7 +30,7 @@
             download.animate({'bottom':'160px'}, 500);
         },function(){
             overlay.clearQueue()
-            overlay.hide() listen.hide();download.hide();
+            overlay.hide();listen.hide();download.hide();
             overlay.animate({"width":"80%"},function () {
 
             })
