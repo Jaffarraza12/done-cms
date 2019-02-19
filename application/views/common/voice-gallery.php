@@ -23,9 +23,9 @@
            overlay.show()
             listen.show();
             download.show();
-            overlay.animate({"width":"100%"},10)
-            listen.animate({'top':'100px'}, 10);
-            download.animate({'bottom':'160px'}, 10);
+            overlay.animate({"width":"100%"},300)
+            listen.animate({'top':'110px'}, 300);
+            download.animate({'bottom':'160px'}, 300);
 
         },function(){
             overlay.clearQueue()
