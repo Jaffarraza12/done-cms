@@ -70,7 +70,7 @@
             var audio = new Audio(voice)
             audio.play()
            $(this).html('<i class="fa fa-pause"></i>')
-            %(this).addClass('sound-button-off').removeClass('sound-button-on')
+            $(this).addClass('sound-button-off').removeClass('sound-button-on')
         });
 
         $('.sound-button-off').click(function(){
@@ -78,7 +78,7 @@
             var audio = new Audio(voice)
             audio.pause()
             $(this).html('<i class="fa fa-play"></i>')
-            %(this).addClass('sound-button-on').removeClass('sound-button-off')
+            $(this).addClass('sound-button-on').removeClass('sound-button-off')
         });
 
         })
