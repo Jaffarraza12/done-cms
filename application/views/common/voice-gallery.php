@@ -42,7 +42,7 @@
 <div class="col-sm-12">
     <div class="row" id="content-boxes" style="word-wrap: break-word;min-height: 900px">
         <div class="col-md-12">
-            <?php foreach ($voices as $voice) ?>
+            <?php foreach ($voices as $voice) { ?>
             <div class="col-md-4 col-lg-4 col-xs-12 ">
                 <div class="sound-item">
                     <div class="sound-img">
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="sound-meta-information">
-                        <h2><?php echo $audio->title?></h2>
+                        <h2><?php echo $audio->title;?></h2>
                     </div>
 
                 </div>
