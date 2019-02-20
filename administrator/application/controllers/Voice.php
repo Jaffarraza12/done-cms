@@ -8,8 +8,6 @@ class Voice extends CI_Controller {
         //Load languages and Default Language
         $data['Languages'] = $this->MUtils->getLanguages();
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
-        echo 1;
-        exit();
 
         //BreadCrumb URLs
         $data['breadcrumb_link1'] = "/Voice";
