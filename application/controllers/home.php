@@ -119,9 +119,9 @@ class Home extends CI_Controller
 
         } elseif (strtolower($q) == 'voice-gallery') {
 
-            $slide_sql = "select * from `videos`";
-            $data['videos'] = $this->db->query($slide_sql)->result();
-
+            $sql = "select * from voice_gallery order by id desc";
+            print_r($data['voices'] = $this->db->query($slide_sql)->rows());
+            exit();
             $data['page'] = 'common/voice-gallery';
             $data['page_content'] = $page_content;
             $data['type'] = "page";

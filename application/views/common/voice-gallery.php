@@ -42,22 +42,24 @@
 <div class="col-sm-12">
     <div class="row" id="content-boxes" style="word-wrap: break-word;min-height: 900px">
         <div class="col-md-12">
+            <?php foreach ($voices as $voice) ?>
             <div class="col-md-4 col-lg-4 col-xs-12 ">
                 <div class="sound-item">
                     <div class="sound-img">
                         <div class="sound-overlay" style="display: none">
-                            <div id="sound-listen" class="rounded-top sound-listen sound-button-on" data-sound="/uploads/audio/wave.mp3"><i class="fa fa-play"></i> </div>
-                            <div id="sound-download" class="rounded-top sound-download "><a href="<?php echo base_url().'uploads/audio/wave.mp3'?>"><i class="fa fa-download"></i></a>  </div>
+                            <div id="sound-listen" class="rounded-top sound-listen sound-button-on" data-sound="/uploads/audio/<?php echo $voice->audio ?>"><i class="fa fa-play"></i> </div>
+                            <div id="sound-download" class="rounded-top sound-download "><a href="<?php echo base_url().'uploads/audio/'.$voice->audio?>"><i class="fa fa-download"></i></a>  </div>
                         </div>
-                        <img src="http://eeevents.ae/k2.png" />
+                        <img src="<?php echo base_url().'uploads/audio-img/'.$audio->image?>" />
                     </div>
 
                     <div class="sound-meta-information">
-                        <h2>Loreum Ipsum</h2>
+                        <h2><?php echo $audio->title?></h2>
                     </div>
 
                 </div>
             </div>
+            <?php } ?>
 
         </div>
     </div>
