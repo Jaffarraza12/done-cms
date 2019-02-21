@@ -31,9 +31,10 @@
             overlay.clearQueue()
             overlay.hide()
             listen.hide();download.hide();
-            listen.animate({'top':'25px'}, 10);
             overlay.animate({"width":"80%"},function () {
-            download.animate({'bottom':'25px'}, 10);
+                listen.animate({'top':'25px'}, 10);
+
+                download.animate({'bottom':'25px'}, 10);
             })
 
         });
