@@ -14,7 +14,7 @@
         <div class="tabbable tabbable-custom">
             <div class="tab-content">
 
-                <input type="hidden" value="Delete" class="url"   />
+                <input type="hidden" value="Voice/Delete" class="url"   />
 
 
                 <div id="tab_1" class="tab-pane active">

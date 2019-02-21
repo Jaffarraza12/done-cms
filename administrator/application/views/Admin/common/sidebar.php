@@ -6,63 +6,42 @@
             <div class="sidebar-toggler hidden-phone"></div>
             <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
         </li>
-        <!-- <li class="avatarCssLi"> -->
-            <!-- BEGIN AVATAR -->
-            <!-- <div class="avatarCss"> -->
-                <!-- <img style="width:180px;border-width:0px;" src="<?php echo base_url(); ?>assets/img/AvatarLarge.png" id="ctl00_AvatarImg"> -->
-            <!-- </div> -->
-            <!-- END AVATAR-->
-        <!-- </li> -->
-
-
-
         <li id="mnuPage">
             <a href="<?php echo base_url(); ?>index.php/Pages/View?q=Page">
                 <i class="icon-retweet"></i>
                 <span class="title">Pages</span>
             </a>
         </li>
-
         <li id="mnuNews">
             <a href="<?php echo base_url(); ?>index.php/Pages/View?q=News">
                 <i class="icon-retweet"></i>
                 <span class="title">News</span>
             </a>
         </li>
-
         <li id="mnuActivities">
             <a href="<?php echo base_url(); ?>index.php/Pages/View?q=Content">
                 <i class="icon-retweet"></i>
                 <span class="title">Content</span>
             </a>
         </li>
-
-
         <li id="mnuBooksCategories" style="display:none">
             <a href="<?php echo base_url(); ?>index.php/BooksCategories">
                 <i class="icon-retweet"></i>
                 <span class="title">Books Categories</span>
             </a>
         </li>
-
-
         <li id="mnuSlideShow">
             <a href="<?php echo base_url(); ?>index.php/Album/View">
                 <i class="icon-picture"></i>
                 <span class="title">Album</span>
             </a>
         </li>
-
         <li id="mnuSlideShow">
             <a href="<?php echo base_url(); ?>index.php/Videos/view">
                 <i class="icon-screen-desktop"></i>
                 <span class="title">Videos</span>
             </a>
         </li>
-
-
-
-
         <li id="mnuSlideShow">
             <a href="<?php echo base_url(); ?>index.php/Voice">
                 <i class="icon-screen-desktop"></i>
