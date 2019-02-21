@@ -27,5 +27,27 @@ class Soundgallery extends CI_Controller {
     }
 
 
+    public function Add()
+    {
+        echo 1;
+        exit();
+        //Load languages and Default Language
+        $data['Languages'] = $this->MUtils->getLanguages();
+        $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
+
+        //BreadCrumb URLs
+        $data['breadcrumb_link1'] = "/Voice/View";
+        $data['breadcrumb_anchor1'] = "Vocie";
+        $data['breadcrumb_link2'] = "/Voice/Add";
+        $data['breadcrumb_anchor2'] = "Add Voice";
+
+        $data['activeMenu'] = "mnuNews";
+
+        $data['main_content'] = "Admin/Voice/add";
+        $this->load->view('Admin/default.php', $data);
+
+    }
+
+
 
 }
