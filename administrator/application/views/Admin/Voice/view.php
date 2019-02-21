@@ -5,7 +5,7 @@
                 <h3>Voice</h3>
             </div>
             <div class="span6 r" style="padding-top:10px;">
-                <a class="btn blue icn-only" href="Soundgallery/Add"><i class="icon-plus icon-white"></i> ADD NEW VOICE</a>
+                <a class="btn blue icn-only" href="Add"><i class="icon-plus icon-white"></i> ADD NEW VOICE</a>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
         <div class="tabbable tabbable-custom">
             <div class="tab-content">
 
-                <input type="hidden" value="Soundgallery/Delete" class="url"   />
+                <input type="hidden" value="Delete" class="url"   />
 
 
                 <div id="tab_1" class="tab-pane active">
