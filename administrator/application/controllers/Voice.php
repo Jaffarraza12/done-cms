@@ -43,8 +43,6 @@ class Voice extends CI_Controller {
 
     }
 
-
-
     public function AddVoice()
     {
         //Load languages and Default Language
@@ -74,7 +72,7 @@ class Voice extends CI_Controller {
         }
 
 
-        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img');
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',500,500);
         $voice['title'] = $this->input->post('title');
         $voice['author'] = $this->input->post("author");
 
@@ -119,7 +117,6 @@ class Voice extends CI_Controller {
         $this->load->view('Admin/default.php', $data);
     }
 
-
     public function EditVoice()
     {
         //Load languages and Default Language
@@ -143,7 +140,7 @@ class Voice extends CI_Controller {
         }
 
 
-        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img');
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',500,500);
         $voice['title'] = $this->input->post('title');
         $voice['author'] = $this->input->post("author");
 
@@ -174,12 +171,12 @@ class Voice extends CI_Controller {
         if((int)$this->input->get('id')) {
             $this->db->where('id', $this->input->get('id'));
             if ($this->db->delete('voice_gallery')) {
-                $json['status'] = true;
+                $json['status'] = "success";
             } else {
-                $json['status'] = false;
+                $json['status'] = "failed";
             }
         } else {
-            $json['status'] = false;
+            $json['status'] = "failed";
         }
         echo json_encode( $json );
 

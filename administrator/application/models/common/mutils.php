@@ -213,79 +213,37 @@ class MUtils extends CI_Model
     }
 
     //Upload file and return url
-    function doUploadPath($field, $path)
+    function doUploadPath($field, $path,$width=0,$height=0)
     {
-        //Configure upload.
+
         $this->upload->initialize(array(
-            "upload_path" => "../uploads/".$path,
-            "allowed_types" => "gif|jpeg|jpg|png",
+            "upload_path"   => "../uploads/",
+            "allowed_types" => "gif|jpg|png",
         ));
 
+
         //Perform upload.
-        if ($this->upload->do_upload($field)) {
-
+        if($this->upload->do_upload($field)){
             $fileData = $this->upload->data();
-
-            if ($resize == true) {
-                $width = $fileData['image_width'];
-                $height = $fileData['image_height'];
-            }
-
             $img_cfg_thumb['image_library'] = 'gd2';
-            $img_cfg_thumb['source_image'] = "../uploads/" . $path . $fileData['raw_name'] . $fileData['file_ext'];
-            $img_cfg_thumb['maintain_ratio'] = false;
-            $img_cfg_thumb['new_image'] = "../uploads/" . $path . $fileData['raw_name'] . $fileData['file_ext'];
-            $img_cfg_thumb['width'] = $width;
-            $img_cfg_thumb['height'] = $height;
-            $img_cfg_thumb['quality'] = 90;
+            $img_cfg_thumb['source_image'] = "../uploads/" . $fileData['raw_name'] . $fileData['file_ext'];
+            if($width && $height) {
+                $img_cfg_thumb['create_thumb'] = FALSE;
+                $img_cfg_thumb['maintain_ratio'] = FALSE;
+                $img_cfg_thumb['width'] = 500;
+                $img_cfg_thumb['height'] = 500;
+            }
             $this->load->library('image_lib');
             $this->image_lib->initialize($img_cfg_thumb);
             $this->image_lib->resize();
 
+
             return $fileData['raw_name'] . $fileData['file_ext'];
-        } else {
+        }
+        else
+        {
             return "";
         }
-
-
-        // //Configure upload.
-        // $this->upload->initialize(array(
-        //     "upload_path"   => "../uploads/" . $path,
-        //     "allowed_types" => "gif|jpg|png",
-        //     "max_size" => 100,
-        //     "max_width" => 1024,
-        //     "max_height" => 768
-        // ));
-
-        // //Perform upload.
-        // if($this->upload->do_upload($field)){
-
-        //     $fileData = $this->upload->data();
-
-        //     if ($resize == "true")
-        //     {
-        //         $width = $fileData['image_width'];
-        //         $height = $fileData['image_height'];
-        //     }
-
-        //     $img_cfg_thumb['image_library'] = 'gd2';
-        //     $img_cfg_thumb['source_image'] = "../uploads/" . $path .  $fileData['raw_name'] . $fileData['file_ext'];
-        //     $img_cfg_thumb['maintain_ratio'] = FALSE;
-        //     $img_cfg_thumb['new_image'] = "../uploads/" . $path . $fileData['raw_name'] . $fileData['file_ext'];
-        //     $img_cfg_thumb['width'] = $width;
-        //     $img_cfg_thumb['height'] = $height;
-        //     $img_cfg_thumb['quality'] = 90;
-        //     $this->load->library('image_lib');
-        //     $this->image_lib->initialize($img_cfg_thumb);
-        //     $this->image_lib->resize();
-
-
-        //     return $path . $fileData['raw_name'] . $fileData['file_ext'];
-        // }
-        // else
-        // {
-        //     return "";
-        // }
     }
 
     function doUploadPdf($field, $path)
