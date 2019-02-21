@@ -48,7 +48,9 @@ class Soundgallery extends CI_Controller {
     }
 
 
-   
+    public  function AddVoice(){
+        echo 12;
+    }
 
 
 
