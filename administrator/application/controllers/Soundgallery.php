@@ -32,146 +32,158 @@ class Soundgallery extends CI_Controller {
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
 
         //BreadCrumb URLs
-        $data['breadcrumb_link1'] = "/Videos/View";
-        $data['breadcrumb_anchor1'] = "Videos";
-        $data['breadcrumb_link2'] = "/Videos/Add";
-        $data['breadcrumb_anchor2'] = "Add Videos";
+        $data['breadcrumb_link1'] = "/Voice/View";
+        $data['breadcrumb_anchor1'] = "Vocie";
+        $data['breadcrumb_link2'] = "/Voice/Add";
+        $data['breadcrumb_anchor2'] = "Add Voice";
 
-        $data['activeMenu'] = "mnuVideos";
+        $data['activeMenu'] = "mnuNews";
 
-        $data['main_content'] = "Admin/Videos/add";
+        $data['main_content'] = "Admin/Voice/add";
         $this->load->view('Admin/default.php', $data);
 
     }
 
-    //Show the view to edit news
-    public function Edit()
+
+
+    public function AddVoice()
+    {
+        //Load languages and Default Language
+        $languages = $this->MUtils->getLanguages();
+        $data['Languages'] = $languages;
+        $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
+
+        $data['activeMenu'] = "mnuNews";
+
+        if ($_FILES['audio']['type'] == 'audio/mp3') {
+            $ttmp_name = $_FILES["audio"]["tmp_name"];
+            $name = time().'.mp3';
+
+            $dir = "./../uploads/audio/";
+            if(move_uploaded_file($ttmp_name, "$dir" . "/" . "$name")){
+                $voice['audio'] =  $name;
+            } else {
+                $data['error']['audio'] = 'There are some problem in uploading audio.';
+            }
+        } else {
+            $data['error']['audio'] = 'File Type Should Be MP3 and not empty.';
+        }
+
+
+        if($this->input->post('title') =="" || empty($this->input->post('title'))){
+            $data['error']['title'] = 'Title Should not be empty.';
+        }
+
+
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img');
+        $voice['title'] = $this->input->post('title');
+        $voice['author'] = $this->input->post("author");
+
+        if($data['error']){
+            $data['breadcrumb_link1'] = "/Voice/View";
+            $data['breadcrumb_anchor1'] = "Vocie";
+            $data['breadcrumb_link2'] = "/Voice/Add";
+            $data['breadcrumb_anchor2'] = "Add Voice";
+            $data['activeMenu'] = "mnuNews";
+            $data['main_content'] = "Admin/Voice/add";
+            $this->load->view('Admin/default.php', array_merge($data,$voice));
+
+        } else {
+            $this->load->model('mvoice');
+            $this->mvoice->add($voice);
+            redirect(base_url().'index.php/Voice');
+
+        }
+
+
+
+    }
+
+    //Show the view to edit page
+    public function Edit($id)
     {
         //Load languages and Default Language
         $data['Languages'] = $this->MUtils->getLanguages();
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
+        $sql = "select * from `voice_gallery` where  id= '".(int)$this->input->get('id')."' order by id asc";
+        $data['record'] = $this->db->query($sql)->row();
 
         //BreadCrumb URLs
-        $data['breadcrumb_link1'] = "/Videos/View";
-        $data['breadcrumb_anchor1'] = "Videos";
-        $data['breadcrumb_link2'] = "/Videos/Edit?id=" . (int)$this->input->get("id");
-        $data['breadcrumb_anchor2'] = "Edit Videos";
+        $data['breadcrumb_link1'] = "/Voice/View";
+        $data['breadcrumb_anchor1'] = "Vocie";
+        $data['breadcrumb_link2'] = "/Voice/Add";
+        $data['breadcrumb_anchor2'] = "Add Voice";
 
-        $data['activeMenu'] = "mnuVideos";
+        $data['activeMenu'] = "mnuNews";
 
-        //Loading Data for this view
-        $this->load->model("MVideos");
-
-        $data['recId'] = (int)$this->input->get("id");
-        $data['record']= $this->MVideos->viewById($data['recId'])->row();
-
-        $data['main_content'] = "Admin/Videos/edit";
+        $data['main_content'] = "Admin/Voice/edit";
         $this->load->view('Admin/default.php', $data);
-
     }
 
-    public function AddVideos()
+
+    public function EditVoice()
     {
         //Load languages and Default Language
+        $voice['id'] = $this->input->post('id');
         $languages = $this->MUtils->getLanguages();
         $data['Languages'] = $languages;
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
-
-        //BreadCrumb URLs
-        $data['breadcrumb_link1'] = "/Videos/Edit";
-        $data['breadcrumb_anchor1'] = "Videos";
-        $data['breadcrumb_link2'] = "/Videos/Add";
-        $data['breadcrumb_anchor2'] = "Add Videos";
-
-        $data['activeMenu'] = "mnuVideos";
-
-        // $data['smallImage'] = $this->MUtils->doUploadWithCropping('smallFile', 70, 92);
-        //$data['largeImage'] = $this->MUtils->doUpload('largeFile',0 ,0, false);
-        //$data['sliderImage'] = $this->MUtils->doUpload('sliderFile', 1920, 530, true);
-        $dat['title'] = $this->input->post('title');
-        $dat['link'] = $this->input->post('link');
-        $dat['status'] = $this->input->post('status');
-
-
-        $defaultCode = $languages[$data['defaultLang']]->code;
-        $status = "";
-        if ( isset($_POST) )
-        {
-            $this->load->model("MVideos");
-            $status = $this->MVideos->addVideos($dat);
+        $data['activeMenu'] = "mnuNews";
+        if ($_FILES['audio']['type'] == 'audio/mp3') {
+            $ttmp_name = $_FILES["audio"]["tmp_name"];
+            $name = time().'.mp3';
+            $dir = "./../uploads/audio/";
+            if(move_uploaded_file($ttmp_name, "$dir" . "/" . "$name")){
+                $voice['audio'] =  $name;
+            } else {
+                $data['error']['audio'] = 'There are some problem in uploading audio.';
+            }
+        }
+        if($this->input->post('title') =="" || empty($this->input->post('title'))){
+            $data['error']['title'] = 'Title Should not be empty.';
         }
 
-        if ($status==1)
-        {
-            $data['status'] = "New Videos Added Successfully.";
-            $data['statusCode'] = 1;
+
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img');
+        $voice['title'] = $this->input->post('title');
+        $voice['author'] = $this->input->post("author");
+
+        if($data['error']){
+            $data['breadcrumb_link1'] = "/Voice/View";
+            $data['breadcrumb_anchor1'] = "Vocie";
+            $data['breadcrumb_link2'] = "/Voice/Edit?id= '".(int)$this->input->get('id')."'";
+            $data['breadcrumb_anchor2'] = "Edit Voice";
+            $data['activeMenu'] = "mnuNews";
+            $data['main_content'] = "Admin/Voice/edit";
+            $this->load->view('Admin/default.php', $data);
+
+        } else {
+            $this->load->model('mvoice');
+            $this->mvoice->edit($voice);
+            redirect(base_url().'index.php/Voice');
+
         }
-        else
-        {
-            $data['status'] = "Error occurred while adding new news.";
-            $data['statusCode'] = 0;
-        }
-        $this->View($data);
+
+
+
     }
 
-    //Edit news dat in database
-    public function EditVideos()
-    {
-
-        //Load languages and Default Language
-        $languages = $this->MUtils->getLanguages();
-        $data['Languages'] = $languages;
-        $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
-
-        $data['smallImage'] = $this->MUtils->doUploadWithCropping('smallFile', 70, 92);
-        //$data['largeImage'] = $this->MUtils->doUpload('largeFile', 0, 0, false);
-        //$data['sliderImage'] = $this->MUtils->doUpload('sliderFile', 1920, 530, true);
-
-        $dat['id'] = $this->input->post('id');
-        $dat['title'] = $this->input->post('title');
-        $dat['link'] = $this->input->post('link');
-        $dat['status'] = $this->input->post('status');
-
-
-        $data['date'] = $this->input->post("date");
-
-        $status = "";
-        $defaultCode = $languages[$data['defaultLang']]->code;
-        if ( isset($_POST ) )
-        {
-            $this->load->model("MVideos");
-            $status = $this->MVideos->editVideos($dat);
-        }
-
-
-        if ($status==1)
-        {
-            $data['status'] = "Videos Updated Successfully.";
-            $data['statusCode'] = 1;
-        }
-        else
-        {
-            $data['status'] = "Error occurred while adding news.";
-            $data['statusCode'] = 0;
-        }
-
-        $this->View($data);
-    }
-
-
+    //Delete Page
     public function Delete()
     {
-        $id = (int)$this->input->get('id');
+        $json = array();
+        if((int)$this->input->get('id')) {
+            $this->db->where('id', $this->input->get('id'));
+            if ($this->db->delete('voice_gallery')) {
+                $json['status'] = true;
+            } else {
+                $json['status'] = false;
+            }
+        } else {
+            $json['status'] = false;
+        }
+        echo json_encode( $json );
 
-        $this->load->model("MVideos");
-        $status = $this->MVideos->deleteVideos($id);
-
-        if ($status)
-            $this->MUtils->setSuccess("Record Deleted Successfully");
-        else
-            $this->MUtils->setError("Error occurred while deleting record");
-
-        echo $this->MUtils->getStatus();
     }
 
 
