@@ -121,7 +121,7 @@ class Home extends CI_Controller
 
             $sql = "select * from voice_gallery order by id desc";
 
-            print_r($data['voices'] = $this->db->query($sql)->rows());
+            print_r($data['voices'] = $this->db->query($sql)->result());
             exit();
             $data['page'] = 'common/voice-gallery';
             $data['page_content'] = $page_content;
