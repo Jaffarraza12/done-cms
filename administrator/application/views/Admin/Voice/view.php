@@ -25,7 +25,7 @@
                         <th width="85%">Title</th>
                         <th width="10%">Actions</th>
 
-                    </tr>W
+                    </tr>
                     </thead>
                     <tbody>
                     <?php
