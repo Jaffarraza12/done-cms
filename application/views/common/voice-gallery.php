@@ -55,7 +55,7 @@
 
 
                     <div class="sound-meta-information">
-                        <h3 style="text-align: center;"><?php echo $voice->title ?></h3>
+                        <h3 style="text-align: center;padding: 20px 0px;"><?php echo $voice->title ?></h3>
                     </div>
 
                 </div>
@@ -96,7 +96,7 @@
         height: 45px;
         position: absolute;
         left: 25%;
-        top: 45%;
+        top: 40%;
         display:none
     }
     .sound-overlay .sound-download{
@@ -105,7 +105,7 @@
         height: 45px;
         position: absolute;
         right: 25%;
-        top:45%;
+        top:40%;
         display:none;
     }
 
