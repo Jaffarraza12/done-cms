@@ -104,7 +104,7 @@
         height: 45px;
         position: absolute;
         right: 25%;
-        bottom: 190px;
+        bottom: 212px;
         display:none;
     }
 
