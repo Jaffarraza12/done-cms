@@ -12,7 +12,7 @@ class Voice extends CI_Controller {
         //BreadCrumb URLs
         $data['breadcrumb_link1'] = "/Voice";
         $data['breadcrumb_anchor1'] = "Voice";
-        echo 1;
+
         $sql = "select * from voice_gallery order by id asc";
         $page_content = $this->db->query($sql)->result();
 

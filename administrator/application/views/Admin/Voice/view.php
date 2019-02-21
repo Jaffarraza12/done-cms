@@ -5,7 +5,7 @@
                 <h3>Voice</h3>
             </div>
             <div class="span6 r" style="padding-top:10px;">
-                <a class="btn blue icn-only" href="Add"><i class="icon-plus icon-white"></i> ADD NEW VOICE</a>
+                <a class="btn blue icn-only" href="Voice/Add"><i class="icon-plus icon-white"></i> ADD NEW VOICE</a>
             </div>
         </div>
 
