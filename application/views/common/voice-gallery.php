@@ -21,21 +21,20 @@
            download = overlay.find('#sound-download')
            overlay.clearQueue()
            overlay.show()
+            overlay.animate({"width":"100%"},300)
             listen.show();
             download.show();
-            overlay.animate({"width":"100%"},300)
-            listen.animate({'top':'160px'}, 300);
-            download.animate({'bottom':'190px'}, 300);
+
 
         },function(){
             overlay.clearQueue()
             overlay.hide()
-            listen.hide();download.hide();
             overlay.animate({"width":"80%"},function () {
-                listen.animate({'top':'25px'}, 10);
 
-                download.animate({'bottom':'25px'}, 10);
             })
+            listen.hide();download.hide();
+          
+
 
         });
     });
