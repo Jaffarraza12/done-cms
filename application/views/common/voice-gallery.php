@@ -126,11 +126,15 @@
         opacity: 0.8;
         width: 80%;
         position: absolute;
-        height: 86%;
+        height: 100%;
     }
 
     .sound-img{
         overflow: hidden;
+    }
+
+    .sound-img img{
+        border: 1px solid #000;
     }
     .sound-item{
         position: relative;
