@@ -33,7 +33,7 @@
 
             })
             listen.hide();download.hide();
-          
+
 
 
         });
@@ -95,7 +95,7 @@
         height: 45px;
         position: absolute;
         left: 25%;
-        top: 25px;
+        top: 160px;
         display:none
     }
     .sound-overlay .sound-download{
@@ -104,7 +104,7 @@
         height: 45px;
         position: absolute;
         right: 25%;
-        bottom: 25px;
+        bottom: 190px;
         display:none;
     }
 
