@@ -72,7 +72,7 @@ class Voice extends CI_Controller {
         }
 
 
-        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',500,500);
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',400,400);
         $voice['title'] = $this->input->post('title');
         $voice['author'] = $this->input->post("author");
 
@@ -140,7 +140,7 @@ class Voice extends CI_Controller {
         }
 
 
-        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',500,500);
+        $voice['image'] = $this->MUtils->doUploadPath('img', 'audio-img',400,400);
         $voice['title'] = $this->input->post('title');
         $voice['author'] = $this->input->post("author");
 
