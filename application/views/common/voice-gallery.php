@@ -52,12 +52,9 @@
                         </div>
                         <img src="<?php echo base_url().'uploads/'.$voice->image ?>" />
                     </div>
-
-
-                    <div class="sound-meta-information">
-                        <h3 style="text-align: center;padding: 20px 0px;"><?php echo $voice->title ?></h3>
-                    </div>
-
+                </div>
+                <div class="sound-meta-information">
+                    <h3 style="text-align: center;margin: 20px 0px;"><?php echo $voice->title ?></h3>
                 </div>
             </div>
             <?php } ?>
