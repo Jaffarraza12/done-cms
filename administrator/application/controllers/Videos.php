@@ -177,19 +177,6 @@ class Videos extends CI_Controller {
     }
 
     //Update Status
-    public function Status()
-    {
-        $id = (int)$this->input->get('id');
 
-        $this->load->model("MVideos");
-        $status = $this->MVideos->setStatus($id);
-
-        if ($status)
-            $this->MUtils->setSuccess("Record Updated Successfully");
-        else
-            $this->MUtils->setError("Error occurred while updating record");
-
-        echo $this->MUtils->getStatus();
-    }
 
 }

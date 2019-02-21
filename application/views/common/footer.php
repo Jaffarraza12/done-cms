@@ -91,7 +91,7 @@
 
     });
     $(window).load(function() {
-        if($("#slider").lenght) {
+        if($("#slider").length) {
             $('#slider').nivoSlider({
                 directionNav: true,
                 animSpeed: 500,
