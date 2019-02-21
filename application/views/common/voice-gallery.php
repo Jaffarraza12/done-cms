@@ -50,7 +50,7 @@
                             <div id="sound-listen" class="rounded-top sound-listen sound-button-on" data-sound="/uploads/audio/<?php echo $voice->audio ?>"><i class="fa fa-play"></i> </div>
                             <div id="sound-download" class="rounded-top sound-download "><a href="<?php echo base_url().'uploads/audio/'.$voice->audio?>"><i class="fa fa-download"></i></a>  </div>
                         </div>
-                        <img src="<?php echo base_url().'uploads/audio-img/'.$audio->image ?>" />
+                        <img src="<?php echo base_url().'uploads/audio-img/'.$voice->image ?>" />
                     </div>
 
                     <div class="sound-meta-information">
