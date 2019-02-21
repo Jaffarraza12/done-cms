@@ -127,7 +127,7 @@
         opacity: 0.8;
         width: 80%;
         position: absolute;
-        height: 100%;
+        height: 90%;
     }
 
     .sound-img{
