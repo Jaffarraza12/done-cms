@@ -40,7 +40,7 @@
     });
 </script>
 <div class="col-sm-12">
-    <div class="row" id="content-boxes" style="word-wrap: break-word;min-height: 900px">
+    <div class="row" id="content-boxes" style="word-wrap: break-word;min-height: 900px;margin-top: 20px;padding: 40px;">
         <div class="col-md-12">
             <?php foreach ($voices as $voice) { ?>
             <div class="col-md-4 col-lg-4 col-xs-12 ">
@@ -53,8 +53,9 @@
                         <img src="<?php echo base_url().'uploads/'.$voice->image ?>" />
                     </div>
 
+
                     <div class="sound-meta-information">
-                        <h2><?php echo $audio->title;?></h2>
+                        <h3 style="text-align: center;"><?php echo $voice->title ?></h3>
                     </div>
 
                 </div>
@@ -95,7 +96,7 @@
         height: 45px;
         position: absolute;
         left: 25%;
-        top: 160px;
+        top: 50%;
         display:none
     }
     .sound-overlay .sound-download{
@@ -104,7 +105,7 @@
         height: 45px;
         position: absolute;
         right: 25%;
-        bottom: 212px;
+        top: 50%;
         display:none;
     }
 
