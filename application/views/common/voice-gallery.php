@@ -93,7 +93,7 @@
         height: 45px;
         position: absolute;
         left: 25%;
-        top: 40%;
+        top: 50%;
         display:none
     }
     .sound-overlay .sound-download{
@@ -102,7 +102,7 @@
         height: 45px;
         position: absolute;
         right: 25%;
-        top:40%;
+        top:50%;
         display:none;
     }
 
@@ -121,10 +121,10 @@
     }
     .sound-overlay{
         background: #000;
-        opacity: 0.8;
+        opacity: 0.7;
         width: 80%;
         position: absolute;
-        height: 90%;
+        height: 100%;
     }
 
     .sound-img{
