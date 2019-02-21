@@ -62,6 +62,16 @@
 
 
 
+
+        <li id="mnuSlideShow">
+            <a href="<?php echo base_url(); ?>index.php/Voice">
+                <i class="icon-screen-desktop"></i>
+                <span class="title">Voice</span>
+            </a>
+        </li>
+
+
+
         <li id="mnuIntro&Obj" style="display:none">
             <a href="<?php echo base_url(); ?>index.php/Pages/Edit?id=29&q=Majalat-Ajman">
                 <i class="icon-retweet"></i>
