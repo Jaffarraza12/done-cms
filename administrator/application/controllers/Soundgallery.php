@@ -29,8 +29,6 @@ class Soundgallery extends CI_Controller {
 
     public function Add()
     {
-        echo 1;
-        exit();
         //Load languages and Default Language
         $data['Languages'] = $this->MUtils->getLanguages();
         $data['defaultLang'] = $this->MUtils->getDefaultLanguage();
