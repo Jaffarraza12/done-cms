@@ -215,29 +215,29 @@ class MUtils extends CI_Model
     //Upload file and return url
     function doUploadPath($field, $path,$width=0,$height=0)
     {
-
         $this->upload->initialize(array(
-            "upload_path"   => "../uploads/",
+            "upload_path"   => "../uploads/".$path."/",
+
             "allowed_types" => "gif|jpg|png",
         ));
-
-
         //Perform upload.
         if($this->upload->do_upload($field)){
             $fileData = $this->upload->data();
             $img_cfg_thumb['image_library'] = 'gd2';
-            $img_cfg_thumb['source_image'] = "../uploads/" . $fileData['raw_name'] . $fileData['file_ext'];
+            $img_cfg_thumb['source_image'] = "../uploads/".$path."/" . $fileData['raw_name'] . $fileData['file_ext'];
             if($width && $height) {
                 $img_cfg_thumb['create_thumb'] = FALSE;
                 $img_cfg_thumb['maintain_ratio'] = FALSE;
                 $img_cfg_thumb['width'] = 500;
                 $img_cfg_thumb['height'] = 500;
+            } else {
+                $img_cfg_thumb['width'] = $fileData['image_width'];
+                $img_cfg_thumb['height'] = $fileData['image_height'];
             }
             $this->load->library('image_lib');
             $this->image_lib->initialize($img_cfg_thumb);
             $this->image_lib->resize();
-
-
+            
             return $fileData['raw_name'] . $fileData['file_ext'];
         }
         else
